@@ -40,12 +40,17 @@ Examples of Unsupervised Learning Algorithms (most common):
     * Linear Discriminant Analysis (LDA)
 * Visualization
     * t-distributed Stochastic Neighbor Embeding (t-SNE)
+* Association Rule Learning
+    * Apriori
+    * Eclat
 
 ### Clustering: The algorithm tries to detect groups of similar patterns.
 
 ### Visualization: The algorith tries to plot the data while preserving as much as possible its structure, so you can understand how the data is organized and perhaps even identify unsuspected patterns.
 
-### Dimensionality reduction: The goal is to simplify the data without loosing too much information. E.g., by merging several correlated features into a single one.
+### Dimensionality Reduction: The goal is to simplify the data without loosing too much information. E.g., by merging several correlated features into a single one.
+
+### Association Rule Learning: The goal is to dig into large amounts of data and discover interesting relations between attributes.
 
 
  # Keywords: 
