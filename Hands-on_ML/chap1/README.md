@@ -75,40 +75,40 @@ One more way to categorize ML systems is by how they generalize. This basically 
 
  ## Examples of Bad Data:
 
- 1. Insufficient Quantity of Training Data
+ 1. **Insufficient Quantity of Training Data**
 
  > It takes a lot of data for most ML algorithms to work properly. Even for simple problems you typically need thoudsands of examples, and for complex ones such as image or speech recognition you may need millions of examples (unless you can reuse parts of an existing model (transfer learning?))
 
  **To remember:** *[...] you may want to consider the tradeoff between spendeing time and money on algorithm development versus spending it on corpus development* - Michele Banko and Eric Brill.
 
-2. Nonrepresentative Training Data
+2. **Nonrepresentative Training Data**
 
 > In order to generalize well, it's crucial that your training data be representative of the new cases you want to generalize to. This is often harder than it sounds: 
 
 * if the sample is too small, you'll have sample noise.
 * but even very large samples can be nonrepresentative, you'll have sampling bias.
 
-3. Poor-Quality Data
+3. **Poor-Quality Data**
 
 > It's often well worth the effort to spend time cleaning up your training data.
 
 * If some instances are clearly outliers, it may help to simply discard them or try to fix the errors manually.
 * If some instances are missing a fe feature, you must decide wheter you want to ignore this attribute altogether, ignore these instances, fill in the missing values, or train one model with the feature and another one without it.
 
-4. Irrelevant Features
+4. **Irrelevant Features**
 
 # Keywords: 
 
-* Training set: Is the example that the system uses to learn.
-* Training instance (or sample): Is the training example.
-* Data mining: Applying ML techniques to dig into large amounts of data which  helps to discovering patterns hat were not immediately apparent.
-* Target: Is the thing that you want to predict.
-* Features: Is the characteristics that describes each data point.
-* Predictors: Is the set of features.
-* Feature extraction: Is the process of understanding the data set, fiding correlations among features and performing dimensionality reduction.
-* Similarity measure: E.g., the total number of common words between two e-mails. Then, the system would flag an e-mail as spam if it has many words in common with a known spam e-mail.
-* Utility function (or fitness function): It measures how good your model is.
-* Cost function: It measures how bad your model is.
-* Inference: To apply the model to make predictions o new cases.
-* Sample noise: Nonrepresentative data as result of chance.
-* Sampling bias: If the sampling method is flawed.
+* **Training set:** Is the example that the system uses to learn.
+* **Training instance (or sample):** Is the training example.
+* **Data mining:** Applying ML techniques to dig into large amounts of data which  helps to discovering patterns hat were not immediately apparent.
+* **Target:** Is the thing that you want to predict.
+* **Features:** Is the characteristics that describes each data point.
+* **Predictors:** Is the set of features.
+* **Feature extraction:** Is the process of understanding the data set, fiding correlations among features and performing dimensionality reduction.
+* **Similarity measure:** E.g., the total number of common words between two e-mails. Then, the system would flag an e-mail as spam if it has many words in common with a known spam e-mail.
+* **Utility function (or fitness function):** It measures how good your model is.
+* **Cost function:** It measures how bad your model is.
+* **Inference:** To apply the model to make predictions o new cases.
+* **Sample noise:** Nonrepresentative data as result of chance.
+* **Sampling bias:** If the sampling method is flawed.
