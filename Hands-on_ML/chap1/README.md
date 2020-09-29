@@ -108,7 +108,7 @@ Two main things can go wrong: "bad algorithm" and "bad data".
 
 ## Examples of Bad Algorithms:
 
-1. Overfitting the Training Data
+1. **Overfitting the Training Data**
 
 > Is the process of overgeneralizing, something that we humans do all too often.
 
@@ -124,6 +124,34 @@ Two main things can go wrong: "bad algorithm" and "bad data".
         * by removing outliers
 
 > You want to find the right balance between fitting the data perfectly and keeping the model simple enough to ensure that it will generalize well.
+
+* The amount of regularization to apply during learning can be controlled by a hyperparameter.
+    * Tuning hyperparameters is an important part of building a ML system.
+
+2. **Underfitting the Training Data**
+
+> The model is too simple to learn the undelying structure of the data.
+
+* Reality is just more complex than the model, so its predictions are bound to be inaccurate, even on the training set.
+* Possible solutions:
+    * To select a more powerful model, with more parameters.
+    * Too feed beter features to the learning algorithm (feature engineering).
+    * To reduce the constraints on the model.
+
+# Testing and Validating
+
+* To split the data into two sets:
+    * Training set
+    * Test set
+    * Evaluating the model on the test set gives you an estimation of the generalization error.
+        * This value tells you how well the model will perform on instances it has never seen before.
+
+> A common process to have a second holdout set called the validation set.
+* You train multiple models with various hyperparameters using the training set.
+* You select the model and hyperparameters that perform best on the validation set.
+* The, you run the model on the test set, one time only, to get an estimate of the generalization error.
+
+> A very common technique is to use cross-validation.
 
 # Keywords: 
 
@@ -145,3 +173,8 @@ Two main things can go wrong: "bad algorithm" and "bad data".
 * **Feature extraction:** To combine existing features to produce a more useful one. 
 * **Creating new features:** To create new features by gathering new data.
 * **Regularization:** Constraining a model to make it simpler and reduce the risk of overfitting.
+* **Hyperparameter:** Is a parameter of the learning algorithm (not from the model itself).
+* **Training set:** Where you train the model.
+* **Test set:** Where you apply the model.
+* **Generalization Error:** The error rate on new cases.
+* **Cross-validation:** The training set is splited into complementary subsets, and each model is trained against a different combination of these subsets and validade against the remaining parts. Once the model type and hyperparameters have been selected, a final model is trained using these hyperparameters on the full training set, and the generalized error is measured on the test set.
