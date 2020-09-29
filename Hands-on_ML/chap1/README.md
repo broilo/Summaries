@@ -71,15 +71,15 @@ One more way to categorize ML systems is by how they generalize. This basically 
 
 # Main Challenges of Machine Learning
 
- Two main things can go wrong: "bad algorithm" and "bad data".
+Two main things can go wrong: "bad algorithm" and "bad data".
 
- ## Examples of Bad Data:
+## Examples of Bad Data:
 
- 1. **Insufficient Quantity of Training Data**
+1. **Insufficient Quantity of Training Data**
 
- > It takes a lot of data for most ML algorithms to work properly. Even for simple problems you typically need thoudsands of examples, and for complex ones such as image or speech recognition you may need millions of examples (unless you can reuse parts of an existing model (transfer learning?))
+> It takes a lot of data for most ML algorithms to work properly. Even for simple problems you typically need thoudsands of examples, and for complex ones such as image or speech recognition you may need millions of examples (unless you can reuse parts of an existing model (transfer learning?))
 
- **To remember:** *[...] you may want to consider the tradeoff between spendeing time and money on algorithm development versus spending it on corpus development* - Michele Banko and Eric Brill.
+**To remember:** *[...] you may want to consider the tradeoff between spendeing time and money on algorithm development versus spending it on corpus development* - Michele Banko and Eric Brill.
 
 2. **Nonrepresentative Training Data**
 
@@ -97,6 +97,34 @@ One more way to categorize ML systems is by how they generalize. This basically 
 
 4. **Irrelevant Features**
 
+> "Trash in, trash out"
+
+* A critical part of the success of a ML project is coming up with a good set of features to train on.
+* The quality of your results is intrinsically connected to the quality of your available data set.
+* Feature engineering: 
+    - Feature selection
+    - Feature extraction
+    - Creating new features
+
+## Examples of Bad Algorithms:
+
+1. Overfitting the Training Data
+
+> Is the process of overgeneralizing, something that we humans do all too often.
+
+* It means that the model performs well on the training data, but it doesn't generalize well on test.
+* Overfitting happens when the model is too complex relative to the amount and noisiness of the training data.
+* Possibel solutions (Regularization):
+    - To simplify the model by selecting fewer parameters
+        * by reducing the number of attributes in the training data
+        * by constraining the model
+    - To gather more training data.
+    - To reduce the noise in the training data
+        * by fixing data errors
+        * by removing outliers
+
+> You want to find the right balance between fitting the data perfectly and keeping the model simple enough to ensure that it will generalize well.
+
 # Keywords: 
 
 * **Training set:** Is the example that the system uses to learn.
@@ -112,3 +140,8 @@ One more way to categorize ML systems is by how they generalize. This basically 
 * **Inference:** To apply the model to make predictions o new cases.
 * **Sample noise:** Nonrepresentative data as result of chance.
 * **Sampling bias:** If the sampling method is flawed.
+* **Feature engineering:** Is the process associated with "problem understanding" task and to catching the importance and essence from the features.
+* **Feature selection:** To select the most useful features to train on among the whole available features.
+* **Feature extraction:** To combine existing features to produce a more useful one. 
+* **Creating new features:** To create new features by gathering new data.
+* **Regularization:** Constraining a model to make it simpler and reduce the risk of overfitting.
