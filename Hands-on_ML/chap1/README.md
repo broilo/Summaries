@@ -1,3 +1,4 @@
+
 # What is Machine Learning?
 
 > *"Machine Learning is a thing labeler. Is an approach to making lots of small decisions with data"* - [Cassie Kozyrkov](https://www.youtube.com/watch?v=L1AiQwxkX7A)
@@ -239,3 +240,4 @@ Two main things can go wrong: "bad algorithm" and "bad data".
 
 19. **What is cross-validation and why would you prefer it to a validation set?**
     * Is the process of splitting the training data into complementary subsets so that the model is trained against a different combination of these subsets and then validated against the remaining parts.
+
