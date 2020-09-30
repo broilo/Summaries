@@ -183,59 +183,59 @@ Two main things can go wrong: "bad algorithm" and "bad data".
 
 # Exercises
 
-1. How would you define Machine Learning?
+1. **How would you define Machine Learning?**
     * ML is all about feeding the system with examples so that the system, not the programmer, learns from these example and at the end turns out to be able to find a recipe based on it. The learning process in ML models simply means to get better at some task and evaluating the system performance.
 
-2. Can you name four types of problems where it shines?
+2. **Can you name four types of problems where it shines?**
     * ML is perhaps the best approach so far to solve complex problems where there isn't a close solution. But most of all, ML can help humans to learn, e.g. a huge data set where at first glance doesn't seem to have any pattern at all, to replace the divine inspiration of a programmer to simply build a recipe based on what de ML model learned from the data, build systems that can recommend thing based on our behavior and perform imagae and speech recognition.
 
-3. What is a labeled training set?
+3. **What is a labeled training set?**
     * Is a set of examples that contains the desired solutions. 
 
-4. What are the two most common supervised tasks?
+4. **What are the two most common supervised tasks?**
     * Classification and Regression.
 
-5. Can you name four common unsupervised tasks?
+5. **Can you name four common unsupervised tasks?**
     * Clustering, visualization, dimensionaltity reduction and association learning.
 
-6. What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?
+6. **What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?**
     * Reinforcement learning, because it would reward or not the system based on the best strategy (policy) of learning.
 
-7. What type of algorithm would you use to segment your customers into multiple groups?
+7. **What type of algorithm would you use to segment your customers into multiple groups?**
     * It dependes, if you don't have any clue regarding the customers, then I'd say a clustering algorithm, which is an unsupervised ML task. However, if you already have some knowledge regarding the problem, then I'd go with a classification algorithm, which is supervised ML task.
 
-8. Would you frame the problem of spam detection as a supervised learning problem or an unsupervised learning problem?
+8. **Would you frame the problem of spam detection as a supervised learning problem or an unsupervised learning problem?**
     * Supervided learning problem, because the spam filter is previously trained based on a set of known mesages classified as spam.
 
-9. What is an online learning system?
+9. **What is an online learning system?**
     * Is a system where the training process is performed incrementally by feeding it with data instances sequentially, either individually or by small groups (mini-batches).
 
-10. What is out-of-core learning?
+10. **What is out-of-core learning?**
     * Is a type of online learning applied to training systems on huge data sets that can't fit in one machine's main memory.
 
-11. What type of learning algorithm relies on a similarity measure to make predictions?
+11. **What type of learning algorithm relies on a similarity measure to make predictions?**
     * Instance-based learning, because the system learn by heart. Therefore, when given a new instance, it uses similarity measure to find the most similar learned instances and uses them to make predictions.
 
-12. What is the difference between a model parameter and a learning algorithm’s hyperparameter?
+12. **What is the difference between a model parameter and a learning algorithm’s hyperparameter?**
     * A model parameter is an intrinsic feature of the model that you may or may not consider. A hyperparameter is a parameter associated with the algorithm, i.e. the classifier itself, which is used to fine-tune the model.
 
-13. What do model-based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?
+13. **What do model-based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?**
     * They search for an optimal value for the model parameter such that the model might generalize well on new instances. Usually is training the system by minimizing the cost-function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity, if the model is regularized. To make predictions, we feed the new instance features into the model prediction function, by using the parameter values found by the learning algorithm.
 
-14. Can you name four of the main challenges in Machine Learning?
+14. **Can you name four of the main challenges in Machine Learning?**
     * Lack of and poor data quality, nonrepresentative training data, simple models that underfit in training and complex ones that overfit and don't generalize.
 
-15. If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?
+15. **If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?**
     * Overtraining. Reduce model complexity, gather more training data, reduce noise/outliers in the training set.
 
-16. What is a test set and why would you want to use it?
+16. **What is a test set and why would you want to use it?**
     * A test set is the data where the ML model will be evaluated its performance related to generalization and estimated the generalization error. It should be used because this is inform how good/bad is the ML model before it's lunched in production.
 
-17. What is the purpose of a validation set?
+17. **What is the purpose of a validation set?**
     * Is to fine-tune the ML model before it's tested into "real" data.
 
-18. What can go wrong if you tune hyperparameters using the test set?
+18. **What can go wrong if you tune hyperparameters using the test set?**
     * Well, this is sort of the problem known as Data Leakage. But, most probably the model will overfit the test and won't perform well on new data. 
 
-19. What is cross-validation and why would you prefer it to a validation set?
+19. **What is cross-validation and why would you prefer it to a validation set?**
     * Is the process of splitting the training data into complementary subsets so that the model is trained against a different combination of these subsets and then validated against the remaining parts.
