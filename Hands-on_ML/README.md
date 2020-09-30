@@ -4,5 +4,7 @@
 
 # [Chapter 1: The Machine Learning Landscape](./chap1)
 
+# [Chapter 2: End-to-End Machine Learning Project](./chap2)
+
 
 
