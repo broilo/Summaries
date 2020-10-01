@@ -296,3 +296,12 @@ In AWS, the GPU is used to:
 * Provide SSL termination (HTTPS) for your websites.
 * Enforce availability across zones.
 * Separate public traffic from provate traffic.
+
+### Why use and EC2 load balancer (ELB)?
+
+* An ELC is a managed load balancer.
+    * AWS guarantees that it will be working.
+    * AWS takes care of upgrades, maintenance, high availability.
+    * AWS provides only a few configuration knobs.
+* It costs less to setup your own load balancer, but it will be a lot more effort on your end.
+* It's integrated with many AWS offerings/services.
