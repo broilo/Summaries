@@ -305,3 +305,11 @@ In AWS, the GPU is used to:
     * AWS provides only a few configuration knobs.
 * It costs less to setup your own load balancer, but it will be a lot more effort on your end.
 * It's integrated with many AWS offerings/services.
+
+### Health checks
+
+* Are crucial for load balancers.
+* They enable the load balancer to know if instances it forwards traffic to are available to reply to requests.
+* Is done on a port and a route (/H=health is common).
+* If the response isn't 200 (OK), then the instance is unhealthy.
+
