@@ -313,3 +313,13 @@ In AWS, the GPU is used to:
 * Is done on a port and a route (/H=health is common).
 * If the response isn't 200 (OK), then the instance is unhealthy.
 
+## Auto Scaling Groups
+
+### What's an ASG?
+* In real-life, the load on your websites and application can change.
+* In the cloud, you can create and get rid of servers very quickly.
+* The goal of an ASG is to:
+    * Scale out (add EC2 instances) to match an increased load.
+    * Scale in (remove EC2 instances) to match a decreased load.
+    * Ensure we have a minimum and a maximum number of machines running.
+    * Automatically register new instances to a load balancer.
