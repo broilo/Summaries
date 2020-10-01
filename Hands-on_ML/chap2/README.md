@@ -44,9 +44,20 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 * It measures the standard deviations of the errors the system makes in its predictions.
 * Is the cost function measured on the set of examples using your hypothesis.
 
-### Mean Absolute Error
+### Mean Absolute Error (MAE)
 
 * Mostly used when there are many outliers in the data set.
+
+## Check the Assumptions
+
+> It is a good practice to list and verify the assumptions that were made so far (by you and the team).
+
+## Get the Data
+
+[It's time to get our handas dirty!](https://github.com/ageron/handson-ml2/blob/master/02_end_to_end_machine_learning_project.ipynb)
+
+
+
 
 # Keywords
 
