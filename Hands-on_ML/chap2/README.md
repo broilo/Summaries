@@ -63,3 +63,9 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 * **Signals:** A piece of information fed to a ML system.
 * **Pipeline:** Is a sequence of data processing components.
+* **Tail heavy:** E.g., the histogram extend much farther to the right of the meadian than to the left.
+* **Data snooping bias**: When you estimate the generalization error using the test set, your estimate will be too optimistic and you'll launch a system that won't perform as well as expected.
+* **Stratified sampling:** The population is divided into homogeneous subgroups called *strata*, and the right number of instances is sampled from each stratum to guarantee that the test set is representative of the overall population.
+
+
+
