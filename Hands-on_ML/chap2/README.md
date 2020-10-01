@@ -64,6 +64,10 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 * This is associated with data snooping bias.
 
+## Prepare the Data for ML Algorithms
+
+
+
 # Keywords
 
 * **Signals:** A piece of information fed to a ML system.
