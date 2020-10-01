@@ -56,8 +56,13 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 [It's time to get our handas dirty!](https://github.com/ageron/handson-ml2/blob/master/02_end_to_end_machine_learning_project.ipynb)
 
+### Create a Test Set
 
+> It seems strange to voluntarily set aside part of the data. After all, you should learn a whole lot more about it before you decide which algorithms to use, right? 
 
+> That's true, but if we look at the test set, we'd probably stumble upon some seemingly interesting pattern. Most probably we'd end up using it to select a particular ML model. 
+
+* This is associated with data snooping bias.
 
 # Keywords
 
@@ -66,6 +71,3 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 * **Tail heavy:** E.g., the histogram extend much farther to the right of the meadian than to the left.
 * **Data snooping bias**: When you estimate the generalization error using the test set, your estimate will be too optimistic and you'll launch a system that won't perform as well as expected.
 * **Stratified sampling:** The population is divided into homogeneous subgroups called *strata*, and the right number of instances is sampled from each stratum to guarantee that the test set is representative of the overall population.
-
-
-
