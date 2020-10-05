@@ -183,80 +183,94 @@ $ ssh -i ./Your-Folder/Your-Instance.pem ec2-user@Public-IP
 For more [information](https://ec2instances.info/).
 
 ### Random Access Memory (RAM) (type, amount, generation)
+
 * Is the computer "hot", because it doesn't persist.
 * Is meant as an "speed-up" in a computer.
 * Gets emptied and lost at each machine's reboot.
 
 If RAM isn't large enough, you'll either get:
+
 * OutOfMemory error
 * The RAM will extend to the disk, *a.k.a* swapping, and performance may decrease considerably.
 
 If you want to check the system's memory status:
 
-```
+``` 
 $ free -m
 ```
 
 For more details:
 
-```
+``` 
 $ top
 ```
+
 and press *Shift + f*, and now you're able to sort by whatever you like. 
 
 Or you could also:
 
-```
+``` 
 $ ps ux
 ```
+
 or
-```
+
+``` 
 $ ps u
 ```
 
 ### Central Process Unit (CPU) (type, make, frequency, generation, number of cores)
+
 * Is a piece of hardware that carries out the instruction of a computer program.
 * It performs the basic arithmatical, logical and input/output operations.
 * Components
-    * Multiple cores (independent, which enables multi-tasking)
-    * Frequency. The higher the frequency means more computations in less time.
+    - Multiple cores (independent, which enables multi-tasking)
+    - Frequency. The higher the frequency means more computations in less time.
 
 If the CPU isn't fast enough or doesn't have enough cores, then you'll get:
+
 * CPU usage of each core at 100%.
 * The server will seriously slow down.
 
 ### Input/Output (I/O) (disk performance, EBS optimizations)
+
 * Is the concept or writing or reading from a disk.
 * It's measured by:
-    * Latency
-    * Random I/O performance (random read/writes)
-    * Sequential read or write performance
-    * IOPS (I/O operations per second)
+    - Latency
+    - Random I/O performance (random read/writes)
+    - Sequential read or write performance
+    - IOPS (I/O operations per second)
 
 If the I/O isn't large enough, you'll get:
+
 * Timeouts
 * Slowdowns
 * Crashes
 
 ### Network (bandwidth, latency)
+
 * Is the concpet of how fast a  machine can send and receive information from other machines.
 * It's measured by:
+
  * Latency
  * Throughput/Bandwidth
 
 If your network isn't fast enough:
+
 * Your application may time out.
 * Latency may be induced.
 
 Obs: Communication network amog EC2 machines is fast, but from outside is a bit slower.
 
 ### Graphical Processing Units (GPU)
+
 * In a normal computer, it's used to compute the colour of the pixels on a screen.
 * It's measured by:
-    * Number of cores (sometimes well over 1024).
-    * Internal GPU memory.
+    - Number of cores (sometimes well over 1024).
+    - Internal GPU memory.
 
 In AWS, the GPU is used to:
+
 * process videos
 * perform computation
 * performa machine learning
@@ -264,14 +278,16 @@ In AWS, the GPU is used to:
 ## Network and Security
 
 ### Security groups
+
 * Act as a "firewall"
 * Regulate:
-    * Access to port
-    * Authorized of forbidden IP
-    * Control of inbound network (from other to the instance)
-    * Control of outbound network (from the instance to other)
+    - Access to port
+    - Authorized of forbidden IP
+    - Control of inbound network (from other to the instance)
+    - Control of outbound network (from the instance to other)
 
 **Good to know**
+
 * Can be attached to multiple instances.
 * Locked down to a region/VPC combination.
 * Does live "outside" the EC2 - if traffic is blocked the EC2 instance won't see it.
@@ -300,9 +316,9 @@ In AWS, the GPU is used to:
 ### Why use and EC2 load balancer (ELB)?
 
 * An ELC is a managed load balancer.
-    * AWS guarantees that it will be working.
-    * AWS takes care of upgrades, maintenance, high availability.
-    * AWS provides only a few configuration knobs.
+    - AWS guarantees that it will be working.
+    - AWS takes care of upgrades, maintenance, high availability.
+    - AWS provides only a few configuration knobs.
 * It costs less to setup your own load balancer, but it will be a lot more effort on your end.
 * It's integrated with many AWS offerings/services.
 
@@ -316,10 +332,24 @@ In AWS, the GPU is used to:
 ## Auto Scaling Groups
 
 ### What's an ASG?
+
 * In real-life, the load on your websites and application can change.
 * In the cloud, you can create and get rid of servers very quickly.
 * The goal of an ASG is to:
-    * Scale out (add EC2 instances) to match an increased load.
-    * Scale in (remove EC2 instances) to match a decreased load.
-    * Ensure we have a minimum and a maximum number of machines running.
-    * Automatically register new instances to a load balancer.
+    - Scale out (add EC2 instances) to match an increased load.
+    - Scale in (remove EC2 instances) to match a decreased load.
+    - Ensure we have a minimum and a maximum number of machines running.
+    - Automatically register new instances to a load balancer.
+
+## Elastic Block Stores (EBS)
+
+### What's and EBS Volume?
+
+* An EC2 machine loses its root volume (main drive) when it's manually terminated.
+* Unexpected terminations might happen from time to time.
+* Sometimes, you need a way to store your instance data somewhere
+* An EBS volume is a network drive that you can attach to your instaces while they run.
+* It allows your instances to persist data.
+* It's locked to an AZ.
+    * To move a volume accross, first you need to snapshot it.
+
