@@ -352,4 +352,3 @@ In AWS, the GPU is used to:
 * It allows your instances to persist data.
 * It's locked to an AZ.
     * To move a volume accross, first you need to snapshot it.
-
