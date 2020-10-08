@@ -66,7 +66,48 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 ## Prepare the Data for ML Algorithms
 
+### Data cleaning
 
+* get rid of missing values.
+* Get rid of the whole attribute.
+* Set the values to some value (zero, the mean, the median, etc.).
+
+## Scikit-Learn main design principles
+
+* Consistency: All objects share a consistent and simple interface.
+    - Estimators: Any object that can estimate some parameters based on a dataset. Any other parameter needed to guide the estimation is considered a hyperparameter.
+    - Transformers: Some estimators can also transform a dataset.
+    - Predictors: Some estimators are capable of making predictions.
+* Inspection: All the estimator's hyperparameters are accessible directly via public instance variables, and all the estimator's learned parameter are also accessible via public instance variables with an underscore suffix.
+* Nonproliferation of classes: Datasets are represented as NumPy arrays or SciPy sparse matrices, instead of homemade classes. Hyperparameters are just regular Python strings or numbers.
+* Composition: Existing building blocks are reused as much as possible. E.g., it's ease to create a Pipeline estimator from an arbitrary sequence of transformers followed by a final estimator.
+* Sensible defaults: Scikit-Learn provides reasonable default values for most parameters, making easy to create a baseline working system quickly.
+
+## Handling Text and Categorical Attributes
+
+* Convert labels to numbers.
+    - Label Encoding: each class is mapped into a number.
+    - One-Hot Encoding: It's a binary category where one attribute is equal to 1 when the category is "A" and 0 otherwise, another attibute is equal to 1 when is "B" and 0 otherwise, and so on. So, it's an encoder to convert integer categorical values into one-hot vectors, because only one attibute will be equal to 1 (hot), while the others will be 0 (cold).
+        * Notice that the outpu is a SciPy sparse matrix, instead of a NumPy array.
+
+## Feature Scaling
+
+* One of the most important transformations is Feature Scaling.
+    - In genereal, ML algorithms don't perform well when the input numerical attributes have very different scales. 
+    - Notice that scaling the target values is generally not required.
+
+> There're two common ways to get all attributes to have the same scale:
+
+### Min-max scaling (many people call this normalization)
+
+* Values are shifted and rescaled so that they end up ranging from 0 to 1.
+* How it's done: Substract the min value from each value and divide it by the max minus the min.
+
+### Standardization
+
+* First it subtracts the mean value, and then it divides by the variance so that the resulting distribution has unit variance.
+* Doesn't bound values to a specific range.
+* Is much less affected by outliers.
 
 # Keywords
 
