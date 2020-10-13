@@ -134,6 +134,7 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 ### Better Evaluation Using Cross-Validation
 
  * **k-fold cross-validation**: it randomly splits the training set into 10 distinct subsets called folds, then it trains and evaluates the classifier 10times, picking a different fold for evaluation every time and training on the other 9 folds.
+
     - The result is an array containing the 10 evaluation scores.
 
 > **Obs**: Sckit-Learn cross-validation features expect an utility function (greater is better) rather than a cost function (lower is better), so the scoring function is actually the opposite of the MSE (i.e., a negative value), which explains why the code computes -scores before calculating the square root.
