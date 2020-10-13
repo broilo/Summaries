@@ -109,6 +109,35 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 * Doesn't bound values to a specific range.
 * Is much less affected by outliers.
 
+## Transformation Pipelines
+
+> There're many data transformation steps that need to be executed in the right order, 
+
+* The Pipeline contructor from Sckit-Learn takes a list/estimator pairs defining a sequence of steps.
+
+## Select and Train a Model
+
+### Training and Evaluation on the Training Set
+
+* **Underfitting** the data: when it happens, it can mean that the features don't provide enough information to make good predictions, or that the model isn't powerful enough.
+    - The main ways to fix it are:
+        * To select a more powerful model.
+        * To feed the training algorithm with better features.
+        * To reduce the constraints on the model.
+
+* **Overfitting** the data: when it happens, it can mean that the model are too complex that it's able to classify/fit/predict even outliers. 
+    - The main ways to fix it are:
+        * To reduce the number of features.
+        * To simplify the model.
+        * To reduce the noise in the training data.
+
+### Better Evaluation Using Cross-Validation
+
+ * **k-fold cross-validation**: it randomly splits the training set into 10 distinct subsets called folds, then it trains and evaluates the classifier 10times, picking a different fold for evaluation every time and training on the other 9 folds.
+    - The result is an array containing the 10 evaluation scores.
+
+> **Obs**: Sckit-Learn cross-validation features expect an utility function (greater is better) rather than a cost function (lower is better), so the scoring function is actually the opposite of the MSE (i.e., a negative value), which explains why the code computes -scores before calculating the square root.
+
 # Keywords
 
 * **Signals:** A piece of information fed to a ML system.
