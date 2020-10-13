@@ -9,6 +9,6 @@ Given a transformation between input and output values, described by a mathemati
 Linear programs are problems that can be expressed in a canonical form as:
 
 
-Maximize    c^{T}x
+Maximize    $$c^{T}x$$
 subject to  Ax$\leq$b
 and         x$\geq$0
