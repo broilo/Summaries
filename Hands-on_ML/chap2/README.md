@@ -145,7 +145,7 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 > Better save every model that has been experimented, so that you can come back easily to any model you want. Make sure you save both the hyperparameters and the trained parameters, as well as the cross-validation scores and perhaps the actual predictions. This will allow you to easily compare scores across model types, and compare the types of erros they make. 
 
-```
+``` 
 from sklearn.externals import joblib
 joblib.dump(my_model, "my_model.pkl")
 # and to load it
@@ -153,6 +153,11 @@ my_model_loaded = joblib.load("my_model.pkl")
 ```
 
 ## Fine-Tune Your Model
+
+### Grid Search
+
+* You tell which hyperparameters you want to experiment with, and what values to try out.
+    - Therefore, it will evaluate all the possible combinations of hyperparameters values unsing cross-validation.
 
 # Keywords
 
