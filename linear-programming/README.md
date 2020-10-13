@@ -8,7 +8,11 @@ Given a transformation between input and output values, described by a mathemati
 
 Linear programs are problems that can be expressed in a canonical form as:
 
+```
+Maximize    c^{T}x 
+subject to  Ax \leq b
+and         x \geq 0
+```
+where x represents the vector of variables to be determined, c and b are vectores of known coefficients, A is a known matrix of coefficients. The expression to be maximized or minimized is called the objective function (in this case, c^{T}x). The inequalities Ax \leq b and x \geq 0 are the constrainsts which specify a convex polytope over which the objective function is to be optimized.
 
-Maximize    $$c^{T}x$$
-subject to  Ax$\leq$b
-and         x$\geq$0
+> The use of optimization software requires that the function f is defined in a suitable programming language and connected to a compile or run time to the optimization software. The optimization software will deliver input values in A, the software module realizing f will deliver the computed value f(x) and, in some cases, additional information about the function like derivatives.
