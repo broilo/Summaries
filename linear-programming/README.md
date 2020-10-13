@@ -24,7 +24,14 @@ where x represents the vector of variables to be determined, c and b are vectore
 * It's couple with large-scale solvers for linear, quadratic, nolinear and mixed integer programming (LP, QP, NLP, MILP, MINLP).
 * Modes of operation include parameter regression, data reconciliation, real-time optimization, dynamic simulation and nonlinear predictive control.
 
+### What does GEKKO do?
 
+* It's a high-level abstraction of mathematical optimization problems.
+* Values in the models are defined by Contrainst, Parameter and Variables.
+* The values are related to each other by Intermidiates or Equations.
+* Objective functions are defined to maximize or minimize certain values.
+* Objects are built-in collections of values (constants, parameters and variables) and relationships (intermidiates, equations and objective functions).
+* Objects can build upon other objects with object-oriented relationships.
 
 ## References
 
