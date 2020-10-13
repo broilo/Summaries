@@ -28,7 +28,7 @@ where x represents the vector of variables to be determined, c and b are vectore
 
 ## References
 
-[Linear Programming](https://en.wikipedia.org/wiki/Linear_programming#:~:text=Linear%20programming%20(LP%2C%20also%20called, are%20represented%20by%20linear%20relationships.)
+[Linear Programming](https://en.wikipedia.org/wiki/Linear_programming#:~:text=Linear%20programming%20(LP%2C%20also%20called, are%20represented%20by%20linear%20relationships.))
 
 [List of Optimization Software](https://en.wikipedia.org/wiki/List_of_optimization_software)
 
