@@ -139,6 +139,21 @@ This chapter will use the [California Housing Prices data set from the StatLib r
 
 > **Obs**: Sckit-Learn cross-validation features expect an utility function (greater is better) rather than a cost function (lower is better), so the scoring function is actually the opposite of the MSE (i.e., a negative value), which explains why the code computes -scores before calculating the square root.
 
+> Notice that cross-validation allows you to get not only an estimate of the model's performance, but also a measure of how precise this estimate is by means of its standard deviation.
+
+* Cross-validation comes at the cost of training the model several times, so it's not always possible.
+
+> Better save every model that has been experimented, so that you can come back easily to any model you want. Make sure you save both the hyperparameters and the trained parameters, as well as the cross-validation scores and perhaps the actual predictions. This will allow you to easily compare scores across model types, and compare the types of erros they make. 
+
+```
+from sklearn.externals import joblib
+joblib.dump(my_model, "my_model.pkl")
+# and to load it
+my_model_loaded = joblib.load("my_model.pkl")
+```
+
+## Fine-Tune Your Model
+
 # Keywords
 
 * **Signals:** A piece of information fed to a ML system.
