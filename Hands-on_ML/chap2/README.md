@@ -159,6 +159,15 @@ my_model_loaded = joblib.load("my_model.pkl")
 * You tell which hyperparameters you want to experiment with, and what values to try out.
     - Therefore, it will evaluate all the possible combinations of hyperparameters values unsing cross-validation.
 
+### Randomized Search
+
+* The grid search approach is fine when you're exploring reatively few combinations.
+* When the hyperparameter search space is large, it's often preferable to use RandomizedSearchCV instead.
+    - Can be used in the same way as the GridSearchCV class, but instead of trying out all possible combination, it evaluates a given number of random combinations by selecting a random value for each hyperparameter at every iteration.
+* Main benefits:
+    - If you let randomized search run for 1000 iterations, then it will explore 1000 different values for each hyperparameter.
+    - You have more control over the computing budget you want to allocate to hyperparameter search, simply by setting the number of iterations.
+
 # Keywords
 
 * **Signals:** A piece of information fed to a ML system.
