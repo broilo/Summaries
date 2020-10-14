@@ -168,6 +168,12 @@ my_model_loaded = joblib.load("my_model.pkl")
     - If you let randomized search run for 1000 iterations, then it will explore 1000 different values for each hyperparameter.
     - You have more control over the computing budget you want to allocate to hyperparameter search, simply by setting the number of iterations.
 
+### Ensemble Methods
+
+* To try to combine the models that perform best.
+* The group (or "ensemble") will often perform better than the best individual model.
+    * E.g., Random Forest perform better than the individual Decision Trees they rely on.
+
 # Keywords
 
 * **Signals:** A piece of information fed to a ML system.
