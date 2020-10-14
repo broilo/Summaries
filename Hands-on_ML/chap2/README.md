@@ -172,7 +172,28 @@ my_model_loaded = joblib.load("my_model.pkl")
 
 * To try to combine the models that perform best.
 * The group (or "ensemble") will often perform better than the best individual model.
-    * E.g., Random Forest perform better than the individual Decision Trees they rely on.
+    - E.g., Random Forest perform better than the individual Decision Trees they rely on.
+
+### Evaluate Your System on the Test Set
+
+ 
+
+* The performance will usually be slightly worse than what you measured using cross-validation if you did a lot of hyperparameter tuning
+    - Simply because your system ends up fin-tuned to perform well on the validation data, and will likely not perform as well on unknown data sets.
+* You must ALWAYS resist the temptation to tweak the hyperparameters to make the numbers look good on the test set.
+    - The improvements would be unlikely to generalize to new data.
+
+**Project prelaunch phase:**
+
+1. Present your solution
+    - highlighting what you've learned
+    - what worked and what didn't
+    - what assumptions were made
+    - what your system's limitations are
+2. Document everything
+3. Create nice presentation
+    - with clear visualizations
+    - easy-to-remember statements
 
 # Keywords
 
