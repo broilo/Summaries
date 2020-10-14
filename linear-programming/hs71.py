@@ -1,7 +1,7 @@
 # Example of an optimization problem from a benchmark test set: The Hock Schittkowski problem 71
 # For more information: https://esa.github.io/pagmo2/docs/cpp/problems/hock_schittkowsky_71.html
 
-from gekko import gekko
+from gekko import GEKKO
 import numpy as np
 
 # Initialize Model
