@@ -6,5 +6,7 @@
 
 # [Chapter 2: End-to-End Machine Learning Project](./chap2)
 
+# [Chapter 3: Classification](./chap3)
+
 
 
