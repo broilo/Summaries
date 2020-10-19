@@ -77,7 +77,7 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 
 ### Precision/Recall tradeoff
 
-<img src="https://miro.medium.com/max/1254/1*mQ6a-tiHstNaC3lTxSibkA.jpeg" align="right" width="300">
+<img src="https://miro.medium.com/max/1254/1*mQ6a-tiHstNaC3lTxSibkA.jpeg" align="center" width="600" heigth="300">
 
 
 # Keywords
