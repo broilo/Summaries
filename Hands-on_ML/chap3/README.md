@@ -20,8 +20,17 @@
 
 > Notice that: Accuracy is generally not the preferred performance measure for classifiers, epecially when you're dealing with skewed datasets (i.e., when some classes are much more frequent than others).
 
-## Confusion Matrix
+## Confusion Matrix (CM)
 
+> The general idea is to count the number of times intances of class A were classified as class B.
 
+* Each row in a CM represents an actual class.
+* Each column in a CM represents a predicted class.
+
+```
+TN | FP
+--------
+FN | TP
+```
 
 # Keywords
