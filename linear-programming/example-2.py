@@ -20,7 +20,7 @@ eq1 = x[2]-1 == x[1]+x[0]
 eq2 = x[2] == x[1]**2
 m.Equation([eq0, eq1, eq2])
 
-# Solve simmulation
+# Solve simulation
 m.solve()
 #m.solve(disp=False)
 
