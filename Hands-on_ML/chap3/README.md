@@ -27,11 +27,7 @@
 * Each row in a CM represents an actual class.
 * Each column in a CM represents a predicted class.
 
-``` 
-TN | FP
---------
-FN | TP
-```
+<img src="https://miro.medium.com/max/1594/1*CPnO_bcdbE8FXTejQiV2dg.png" align="center" width="300">
 
 * CM gives you a lot of information, but sometimes you may prefer a more concise metric.
 
