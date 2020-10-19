@@ -91,12 +91,23 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 
 * it's very similar to the precision/recall curve
     - but instead it plots the True Positive Rate (Recall) against the False Positive Rate (FPR).
-    * FPR is the ratio of negatives instances that are incorrectly classified as positive.
+    - FPR is the ratio of negatives instances that are incorrectly classified as positive.
         * FPR = 1 - TNR
         * TNR: true negative rate (a.k.a specificity), is the ratio of negative instances that are correctly classified as negative.
 * ROC Curve plots sensitivity against 1-specificity
 
 <img src="https://glassboxmedicine.files.wordpress.com/2019/02/roc-curve-v2.png?w=576" align="center" width="600" heigth="300">
+
+* Once again there's a tradeoff.
+    - The higher the recall (TPR), the more false positives (FPR) the classifier produces.
+* One way to compare classifiers is to measure the area under the curve (AUC).
+    * A perfect classifier will have ROC AUC equal to 1, whereas a purely random one will have ROC AUC equal to 1/2.
+
+**When to use?**
+* As a rule of thumb:
+    * Precision/Recall curve: whenever the positive calss is rare or when you care more about the false positives than the false negatives.
+    * ROC curve: otherwise.
+
 
 # Keywords
 
