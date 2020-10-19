@@ -66,7 +66,7 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
     - Ex1: you trained a classifier to detect videos that're safe for kids.
         * You'd probably prefer a classifier that rejects many good videos (low recall), but keeps only safe ones (high precision)
         * rather than a classifier that has a much higher recall, but lets a few really bad videos show up in your product.
-    * Ex2: You trained a classifier to detect shoplifters on surveillance images.
+    - Ex2: You trained a classifier to detect shoplifters on surveillance images.
         * It's probably fine if your classifier has only 30% precision as long as it has 99% recall.
 
 > Notice that: you can't have both. Increasing precision reduces recall and vice versa. This is called ther precision/recall tradeoff.
@@ -81,5 +81,23 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 
 <img src="https://i.imgur.com/7TIpZUb.png" align="center" width="600" heigth="300">
 
+* The precision really starts to fall sharply around 80% recall.
+* You'll probalby want to select a precision/recall tradeoff jsut before that drop. 
+    - Of course the choice depends on the project.
+
+> Notice that: a high-precision classifier isn't very useful it its recall is too low.
+
+### The ROC Curve (Receiver Operating Characteristic)
+
+* it's very similar to the precision/recall curve
+    - but instead it plots the True Positive Rate (Recall) against the False Positive Rate (FPR).
+    * FPR is the ratio of negatives instances that are incorrectly classified as positive.
+        * FPR = 1 - TNR
+        * TNR: true negative rate (a.k.a specificity), is the ratio of negative instances that are correctly classified as negative.
+* ROC Curve plots sensitivity against 1-specificity
+
+<img src="https://glassboxmedicine.files.wordpress.com/2019/02/roc-curve-v2.png?w=576" align="center" width="600" heigth="300">
+
 # Keywords
+
 **Precision/Recall tradeoff:** Increasing precision reduces recall and vice versa.
