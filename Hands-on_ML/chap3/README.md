@@ -27,10 +27,57 @@
 * Each row in a CM represents an actual class.
 * Each column in a CM represents a predicted class.
 
-```
+``` 
 TN | FP
 --------
 FN | TP
 ```
 
+* CM gives you a lot of information, but sometimes you may prefer a more concise metric.
+
+### Precision
+
+> Is the accuracy of positive predictons, i.e. what I know divided by what it is.
+
+``` 
+precision = TP/(TP+FP)
+```
+
+### Recall
+
+* also called Sensitiviry or True Positive Rate (TRP)
+
+> Is the ratio of positive instances that are correctly detected by the classifier, i.e. what I know divided by what I think it is.
+
+``` 
+recall = TP/(TP+FN)
+```
+
+### Precision and Recall
+
+> It's often convenient to combine precision and recall into a single metric called F1-score.
+
+* Is the non weighted harmonic mean of precision and recall.
+    - Whereas the regular mean treats all values equally, the harmonic mean gives much more weight to low values.
+    - The classifier will only get a high F1-score if both recall and precision are high.
+
+``` 
+F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
+```
+
+* The F1-score favors classifiers that have similar precision and recall.
+* This isn't always what you want:
+    - Ex1: you trained a classifier to detect videos that're safe for kids.
+        * You'd probably prefer a classifier that rejects many good videos (low recall), but keeps only safe ones (high precision)
+        * rather than a classifier that has a much higher recall, but lets a few really bad videos show up in your product.
+    * Ex2: You trained a classifier to detect shoplifters on surveillance images.
+        * It's probably fine if your classifier has only 30% precision as long as it has 99% recall.
+
+> Notice that: you can't have both. Increasing precision reduces recall and vice versa. This is called ther precision/recall tradeoff.
+
+### Precision/Recall tradeoff
+
+![teste](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fswlh%2Fprecision-recall-tradeoff-29e57ce22a13&psig=AOvVaw1-Z2Mh65AZNnNIBELZH5J5&ust=1603224124895000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCG1re5wewCFQAAAAAdAAAAABAJ)
+
 # Keywords
+**Precision/Recall tradeoff:** Increasing precision reduces recall and vice versa.
