@@ -73,8 +73,13 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 
 ### Precision/Recall tradeoff
 
+* By raising the decision threshold decreases recall.
+
 <img src="https://miro.medium.com/max/1254/1*mQ6a-tiHstNaC3lTxSibkA.jpeg" align="center" width="600" heigth="300">
 
+* Another way to select the best precision/recall tradeoff is to plot precision directly against recall.
+
+<img src="https://i.imgur.com/7TIpZUb.png" align="center" width="600" heigth="300">
 
 # Keywords
 **Precision/Recall tradeoff:** Increasing precision reduces recall and vice versa.
