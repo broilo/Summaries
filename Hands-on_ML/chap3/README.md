@@ -1,5 +1,7 @@
 # Training a Binary Classifier
 
+* Binary classifiers distinguish between two classes.
+
 > [...]
 
 * Stochastic Gradient Descent (SGD) classifier.
@@ -101,13 +103,17 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 * Once again there's a tradeoff.
     - The higher the recall (TPR), the more false positives (FPR) the classifier produces.
 * One way to compare classifiers is to measure the area under the curve (AUC).
-    * A perfect classifier will have ROC AUC equal to 1, whereas a purely random one will have ROC AUC equal to 1/2.
+    - A perfect classifier will have ROC AUC equal to 1, whereas a purely random one will have ROC AUC equal to 1/2.
 
 **When to use?**
-* As a rule of thumb:
-    * Precision/Recall curve: whenever the positive calss is rare or when you care more about the false positives than the false negatives.
-    * ROC curve: otherwise.
 
+* As a rule of thumb:
+    - Precision/Recall curve: whenever the positive calss is rare or when you care more about the false positives than the false negatives.
+    - ROC curve: otherwise.
+
+# Multiclass Classification
+
+* Also called multinomial classifiers, can distinguish among more than two classes.
 
 # Keywords
 
