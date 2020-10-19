@@ -15,7 +15,7 @@ y = m.Var()
 m.Equation(3*x+2*y == 1)
 m.Equation(x+2*y == 0)
 
-# Solve simmulation
+# Solve simulation
 m.solve()
 #m.solve(disp=False)
 
