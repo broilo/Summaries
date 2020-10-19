@@ -80,3 +80,5 @@ When the system of equations does not converge, APMonitor produces a convergence
 [List of Optimization Software](https://en.wikipedia.org/wiki/List_of_optimization_software)
 
 [GEKKO Optimization Suite](https://gekko.readthedocs.io/en/latest/)
+
+[GEKKO Python Tutorials](https://apmonitor.com/wiki/index.php/Main/GekkoPythonOptimization)
