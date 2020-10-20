@@ -111,7 +111,7 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
     - Precision/Recall curve: whenever the positive class is rare or when you care more about the false positives than the false negatives.
     - ROC curve: otherwise.
 
-# Multiclass Classification
+## Multiclass Classification
 
 > Also called multinomial classifiers, can distinguish among more than two classes.
 
@@ -137,7 +137,15 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
     * If there're N classes, you'll need to train N(N-1)/2 classifiers.
     * The main advantage of OvO is that each classifier only needs to be trained on the part of the training set for the two classes that it must distinguish.
 
-* E.g., SVM's scale poorly with the size of the training set &rightarrow; OvO is preferred
+* E.g., SVM's scale poorly with the size of the training set &rightarrow; OvO is preferred since it's faster to train many classifiers on small training sets than few classifiers on larger training sets.
+    * For most binary classification algorithms &rightarrow; OvA is preferred.
+
+
+* Scikit-Learn detects when you try to use a binary classification algorithm for a multiclass classification task 
+    * It automatically runs OvA &rightarrow; except for SVM which uses OvO.
+
+## Error Analysis
+
 
 
 # Keywords
