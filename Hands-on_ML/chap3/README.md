@@ -108,12 +108,37 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 **When to use?**
 
 * As a rule of thumb:
-    - Precision/Recall curve: whenever the positive calss is rare or when you care more about the false positives than the false negatives.
+    - Precision/Recall curve: whenever the positive class is rare or when you care more about the false positives than the false negatives.
     - ROC curve: otherwise.
 
 # Multiclass Classification
 
-* Also called multinomial classifiers, can distinguish among more than two classes.
+> Also called multinomial classifiers, can distinguish among more than two classes.
+
+* Some algorithms are capable of hanndling multiple classes directly. e.g.:
+    * Random Forest
+    * Naive Bayes
+* Others are strictly binary classifiers, e.g.:
+    * Support Vector Machines 
+    * Linear classifiers
+
+> However, there're strategies to perform multiclass classification using multiplt binary classifier.
+
+* For example: When you want to classify an image:
+    * you get the decision score from each classifier for that image
+    * select the class whose classifier outputs the highest score
+* This is called the one-versus-all (OvA) stratey, a.k.a one-versus-the-rest.
+
+* Another example: To train a binary classifier for every pair of digits (e.g., MNIST dataset)
+    * one to distinguish 0s and 1s
+    * another to distinguish 0s and 2s
+    * another for 1s and 2s, and so on.
+* This is called the one-versus-one (OvO) strategy.
+    * If there're N classes, you'll need to train N(N-1)/2 classifiers.
+    * The main advantage of OvO is that each classifier only needs to be trained on the part of the training set for the two classes that it must distinguish.
+
+* E.g., SVM's scale poorly with the size of the training set &rightarrow; OvO is preferred
+
 
 # Keywords
 
