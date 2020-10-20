@@ -116,37 +116,57 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 > Also called multinomial classifiers, can distinguish among more than two classes.
 
 * Some algorithms are capable of hanndling multiple classes directly. e.g.:
-    * Random Forest
-    * Naive Bayes
+    - Random Forest
+    - Naive Bayes
 * Others are strictly binary classifiers, e.g.:
-    * Support Vector Machines 
-    * Linear classifiers
+    - Support Vector Machines 
+    - Linear classifiers
 
 > However, there're strategies to perform multiclass classification using multiplt binary classifier.
 
 * For example: When you want to classify an image:
-    * you get the decision score from each classifier for that image
-    * select the class whose classifier outputs the highest score
+    - you get the decision score from each classifier for that image
+    - select the class whose classifier outputs the highest score
 * This is called the one-versus-all (OvA) stratey, a.k.a one-versus-the-rest.
 
 * Another example: To train a binary classifier for every pair of digits (e.g., MNIST dataset)
-    * one to distinguish 0s and 1s
-    * another to distinguish 0s and 2s
-    * another for 1s and 2s, and so on.
+    - one to distinguish 0s and 1s
+    - another to distinguish 0s and 2s
+    - another for 1s and 2s, and so on.
 * This is called the one-versus-one (OvO) strategy.
-    * If there're N classes, you'll need to train N(N-1)/2 classifiers.
-    * The main advantage of OvO is that each classifier only needs to be trained on the part of the training set for the two classes that it must distinguish.
+    - If there're N classes, you'll need to train N(N-1)/2 classifiers.
+    - The main advantage of OvO is that each classifier only needs to be trained on the part of the training set for the two classes that it must distinguish.
 
 * E.g., SVM's scale poorly with the size of the training set &rightarrow; OvO is preferred since it's faster to train many classifiers on small training sets than few classifiers on larger training sets.
-    * For most binary classification algorithms &rightarrow; OvA is preferred.
-
+    - For most binary classification algorithms &rightarrow; OvA is preferred.
 
 * Scikit-Learn detects when you try to use a binary classification algorithm for a multiclass classification task 
-    * It automatically runs OvA &rightarrow; except for SVM which uses OvO.
+    - It automatically runs OvA &rightarrow; except for SVM which uses OvO.
 
 ## Error Analysis
 
+> Analyzing the CM can often give you insights on ways to improve your classifier.
 
+## Multilabel Classification
+
+> In some cases you may want your classifier to output multiple classes for earch instance.
+
+* For example: a face-recognition classifier
+    - What should it do if it recognizes several people on the same picture?
+        * It should attach one label per person it recognies, of course.
+    - Picture that: the classifier has been trained to recognze three faces: Alice, Bob anc Charlie.
+    - When it's shown a picture of Alice and Charlie, it should output [1, 0, 1]
+        * Which means, "Alice yes, Bob no, Charlie yes".
+* Such classification system that outputs multiple binary labels is called a multilabel classification system.
+
+* There're many ways to evaluate a multilabel classifier
+    - and selecting the right metric really on your project.
+* One approach is to measure the F1-score for each individual label
+    - then  simply compute the average score &rightarrow; this assumes that all labels are equally important, which may not be the case.
+
+## Multioutput Classification
+
+> It's simply a generalization of multilabel classification, where each label can be multicall (i.e., it can have more than two possible values).
 
 # Keywords
 
