@@ -123,6 +123,14 @@
     * Programação
     * Design de banco de dados e otimização
 
+# Spark
+
+> Tecnologia criada para aumentar ainda mais a performance de processamento de grande volumes de dados em paralelo.
+
+* Spark roda em cima do Hadoop
+    * Isso faz com que o Spark leia arquivos que estão no HDFS.
+* Tem uma API unificada e bem vasta.
+
 ## Refências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
