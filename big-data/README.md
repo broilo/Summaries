@@ -131,6 +131,67 @@
     * Isso faz com que o Spark leia arquivos que estão no HDFS.
 * Tem uma API unificada e bem vasta.
 
+```
+>>> data=[("Newton", 1643), ("Einstein", 1879), ("Gauss", 1777)]
+>>> df=spark.createDataFrame(data, ["name", "birth"])
+>>> df.printSchema()
+root
+ |-- name: string (nullable = true)
+ |-- birth: long (nullable = true)
+
+>>> df.show()
++--------+-----+                                                                
+|    name|birth|
++--------+-----+
+|  Newton| 1643|
+|Einstein| 1879|
+|   Gauss| 1777|
++--------+-----+
+
+>>> PATH="/home/broilo/Downloads/titanic/train.csv"
+>>> df=spark.read.format("com.databricks.spark.csv") \
+...    .option("header", "true") \
+...    .option("inferSchema", "true")
+>>> df.load(PATH)
+DataFrame[PassengerId: int, Survived: int, Pclass: int, Name: string, Sex: string, Age: double, SibSp: int, Parch: int, Ticket: string, Fare: double, Cabin: string, Embarked: string]
+>>> df.show()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'DataFrameReader' object has no attribute 'show'
+>>> df=spark.read.format("com.databricks.spark.csv") \
+... .option("header", "true") \
+... .option("inferSchema", "true") \
+... .load(PATH)
+>>> df.show()
++-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
+|PassengerId|Survived|Pclass|                Name|   Sex| Age|SibSp|Parch|          Ticket|   Fare|Cabin|Embarked|
++-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
+|          1|       0|     3|Braund, Mr. Owen ...|  male|22.0|    1|    0|       A/5 21171|   7.25| null|       S|
+|          2|       1|     1|Cumings, Mrs. Joh...|female|38.0|    1|    0|        PC 17599|71.2833|  C85|       C|
+|          3|       1|     3|Heikkinen, Miss. ...|female|26.0|    0|    0|STON/O2. 3101282|  7.925| null|       S|
+|          4|       1|     1|Futrelle, Mrs. Ja...|female|35.0|    1|    0|          113803|   53.1| C123|       S|
+|          5|       0|     3|Allen, Mr. Willia...|  male|35.0|    0|    0|          373450|   8.05| null|       S|
+|          6|       0|     3|    Moran, Mr. James|  male|null|    0|    0|          330877| 8.4583| null|       Q|
+|          7|       0|     1|McCarthy, Mr. Tim...|  male|54.0|    0|    0|           17463|51.8625|  E46|       S|
+|          8|       0|     3|Palsson, Master. ...|  male| 2.0|    3|    1|          349909| 21.075| null|       S|
+|          9|       1|     3|Johnson, Mrs. Osc...|female|27.0|    0|    2|          347742|11.1333| null|       S|
+|         10|       1|     2|Nasser, Mrs. Nich...|female|14.0|    1|    0|          237736|30.0708| null|       C|
+|         11|       1|     3|Sandstrom, Miss. ...|female| 4.0|    1|    1|         PP 9549|   16.7|   G6|       S|
+|         12|       1|     1|Bonnell, Miss. El...|female|58.0|    0|    0|          113783|  26.55| C103|       S|
+|         13|       0|     3|Saundercock, Mr. ...|  male|20.0|    0|    0|       A/5. 2151|   8.05| null|       S|
+|         14|       0|     3|Andersson, Mr. An...|  male|39.0|    1|    5|          347082| 31.275| null|       S|
+|         15|       0|     3|Vestrom, Miss. Hu...|female|14.0|    0|    0|          350406| 7.8542| null|       S|
+|         16|       1|     2|Hewlett, Mrs. (Ma...|female|55.0|    0|    0|          248706|   16.0| null|       S|
+|         17|       0|     3|Rice, Master. Eugene|  male| 2.0|    4|    1|          382652| 29.125| null|       Q|
+|         18|       1|     2|Williams, Mr. Cha...|  male|null|    0|    0|          244373|   13.0| null|       S|
+|         19|       0|     3|Vander Planke, Mr...|female|31.0|    1|    0|          345763|   18.0| null|       S|
+|         20|       1|     3|Masselmani, Mrs. ...|female|null|    0|    0|            2649|  7.225| null|       C|
++-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
+only showing top 20 rows
+
+>>>
+```
+
 ## Refências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
