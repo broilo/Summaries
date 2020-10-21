@@ -8,5 +8,7 @@
 
 # [Chapter 3: Classification](./chap3)
 
+# [Chapter 4: Training Models](./chap4)
+
 
 
