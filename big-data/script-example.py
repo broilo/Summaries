@@ -15,7 +15,7 @@ udf_to_value = F.udf(to_value, FloatType())
 
 df = spark.read.csv("file.csv", header=True)
 
-def2 = df.withColumn("New Column Name", udf_to_value(df["Column Name"])) \
+df2 = df.withColumn("New Column Name", udf_to_value(df["Column Name"])) \
     .withColumn("Another New Column Name", F.to_date(df["Another Column Name"], format="dd/MM/yy"))
 
 df3 = df2.select(df2["Column Name"].alias("Rename Column"),
