@@ -880,6 +880,15 @@ only showing top 20 rows
 
 ``` 
 
+## Como submeter um pyspark script?
+
+```
+$SPARK_HOME/bin/spark-submit --master local[2] script-example.py
+```
+* Roda localmente na minha máquina
+* Utilizando somente 2 núcleos de processamento
+* Roda o script-example.py
+
 ## Refências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
