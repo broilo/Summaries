@@ -43,4 +43,4 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     * It measures the local gradient of the error function with regards to the parameter vector, and it goes in the direction of descending gradient. 
         * Once the gradient is zero, you've reached a minimum!
 
-<img src="https://kharshit.github.io/img/gradient_descent_demystified.png" align="center" width="600" heigth="300">
+<img src="https://kharshit.github.io/img/gradient_descent_demystified.png" align="center" width="600" heigth="200">
