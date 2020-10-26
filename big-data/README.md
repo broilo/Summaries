@@ -889,6 +889,14 @@ $SPARK_HOME/bin/spark-submit --master local[2] script-example.py
 * Utilizando somente 2 núcleos de processamento
 * Roda o script-example.py
 
+## Como rodar o Spark no Pupyter?
+
+```
+$ export PYSPARK_DRIVER_PYTHON=jupyter
+$ export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+$ $SPARK_HOME/bin/pyspark
+```
+
 ## Refências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
