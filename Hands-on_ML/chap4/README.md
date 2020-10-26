@@ -76,3 +76,5 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * Training a model means searching for a combination of model parameters that minimizes a cost function (over the training set).
     - It's a search in the model's parameter space.
         * The more parameters a model has, the more dimensions this space has, and harder the search is.
+
+## Batch Gradient Descent
