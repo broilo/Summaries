@@ -55,7 +55,10 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * And it's determined by the learning rate hyperparameter.
     * Too small: then the algorithm will have to go through mny iterations to converge, 
         * and consequently will take a long time.
-    * Too high: then you might jump across the valley and end up on the other side, possibly even higher than you were before.
+    * Too large: then you might jump across the valley and end up on the other side, possibly even higher than you were before.
         * This could make the algorithm to diverge and failing to find a good solution.
 
 <img src="https://cdn-images-1.medium.com/max/1000/1*n79s9gvd0E8ALe9dLUEKAw.png" align="center" width="500" heigth="300">
+
+<img src="https://miro.medium.com/max/2670/1*vCjuDIofrymzImk1X9z58Q.png" align="center" width="500" heigth="300">
+
