@@ -62,3 +62,6 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 <img src="https://miro.medium.com/max/2670/1*vCjuDIofrymzImk1X9z58Q.png" align="center" width="500" heigth="300">
 
+* Not all cost functions look like nice regular bowls:
+
+<img src="https://pic1.zhimg.com/80/v2-6c5e20f498158c39ad76edaeb04e763a_1440w.jpg" align="center" width="500" heigth="300">
