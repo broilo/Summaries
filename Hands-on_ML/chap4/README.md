@@ -40,22 +40,22 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 > Is a very generic optimization algorithm capable of finding optimal solutions to a wide range of problems.
 
 * The general idea: to tweak parameters iteratively in order to minimize a cost function.
-    * It measures the local gradient of the error function with regards to the parameter vector, and it goes in the direction of descending gradient. 
+    - It measures the local gradient of the error function with regards to the parameter vector, and it goes in the direction of descending gradient. 
         * Once the gradient is zero, you've reached a minimum!
 
 <img src="https://kharshit.github.io/img/gradient_descent_demystified.png" align="center" width="400" heigth="200">
 
 * You start by filling the parameter vector with random values (random initialization)
-    * and then you improve it gradually, taking one baby step at a time
-    * each step attempting to decrease the cost function, until the algorithm converges to a minimum.
+    - and then you improve it gradually, taking one baby step at a time
+    - each step attempting to decrease the cost function, until the algorithm converges to a minimum.
 
 ## The size of the steps
 
 * It's an important parameter in Gradient Descent.
 * And it's determined by the learning rate hyperparameter.
-    * Too small: then the algorithm will have to go through mny iterations to converge, 
+    - Too small: then the algorithm will have to go through mny iterations to converge, 
         * and consequently will take a long time.
-    * Too large: then you might jump across the valley and end up on the other side, possibly even higher than you were before.
+    - Too large: then you might jump across the valley and end up on the other side, possibly even higher than you were before.
         * This could make the algorithm to diverge and failing to find a good solution.
 
 <img src="https://cdn-images-1.medium.com/max/1000/1*n79s9gvd0E8ALe9dLUEKAw.png" align="center" width="500" heigth="300">
@@ -65,3 +65,14 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * Not all cost functions look like nice regular bowls:
 
 <img src="https://pic1.zhimg.com/80/v2-6c5e20f498158c39ad76edaeb04e763a_1440w.jpg" align="center" width="500" heigth="300">
+
+* The MSE cost function for a Linear Regression model happens to be a convex function.
+
+    Which means that there're not any local minima, just one global minimum.
+
+* In fact, the cost function has the shape of a bowl, but it can be an elongated bowl if the features have very different scales.
+* Therefore, when using Gradient Descent, you should ensure that all features have a similar scale (e.g., using Scikit-Learn's StandardScaler class), or else it'll take much longer to converge.
+
+* Training a model means searching for a combination of model parameters that minimizes a cost function (over the training set).
+    - It's a search in the model's parameter space.
+        * The more parameters a model has, the more dimensions this space has, and harder the search is.
