@@ -889,7 +889,7 @@ $SPARK_HOME/bin/spark-submit --master local[2] script-example.py
 * Utilizando somente 2 núcleos de processamento
 * Roda o script-example.py
 
-## Como rodar o Spark no Pupyter?
+## Como rodar o Spark no Jupyter?
 
 ```
 $ export PYSPARK_DRIVER_PYTHON=jupyter
