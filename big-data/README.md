@@ -897,6 +897,16 @@ $ export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
 $ $SPARK_HOME/bin/pyspark
 ```
 
+# Como Big Data funciona na prática?
+
+ * Aplicações
+    * Kafka: Sistema de armazenamento de dados distribuídos. É uma ferramenta que recebe os dados e os armazena por algum tempo.
+        * Streaming: Aplicações que vão executar alguma coisa assim que o dado chega. E.g., um sistema de detecção de fraude.
+            * Aplicações que em geral tenham um requisito de tempo e que precisa ser feito algo de imediato.
+        * Batch: Aplicações que podem esperar os dados se acumularem para processá-los. Alicações que processam os dados que já estão armazenados em algum lugar (Hadoop-HDFS).
+            ETL: Ferramentas que vão ler os dados, eventualmente vão fazer alguma agregação ou sumarização, e que vão jogar estes dados em algum banco de dados relacional. São jobs que lêem os dados, fazem alguma análise e disponibilizam em alguma ferramente que podem fazer uma consulta SQL, Tableau...
+            * Machine Learning: Extrair algum tipo de inteligência dos dados. Processar os dados de forma que tenham alguma informação útil para o meu negócio.
+                * Resultado do processo de ML atualiza um Cache, e este Cashe fica disponível para as aplicações online.
 ## Refências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
