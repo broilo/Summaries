@@ -35,4 +35,12 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - The computational complexity is linear with regards both the number of instances you want to make predictions on and the number of features.
         * Making predictions on twice as many instances (or twice as mane features) will jsut take roughly twice as much time.
 
+# Gradient Descent
 
+> Is a very generic optimization algorithm capable of finding optimal solutions to a wide range of problems.
+
+* The general idea: to tweak parameters iteratively in order to minimize a cost function.
+    * It measures the local gradient of the error function with regards to the parameter vector, and it goes in the direction of descending gradient. 
+        * Once the gradient is zero, you've reached a minimum!
+
+<img src="https://kharshit.github.io/img/gradient_descent_demystified.png" align="center" width="600" heigth="300">
