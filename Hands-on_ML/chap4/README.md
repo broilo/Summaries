@@ -44,3 +44,18 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
         * Once the gradient is zero, you've reached a minimum!
 
 <img src="https://kharshit.github.io/img/gradient_descent_demystified.png" align="center" width="400" heigth="200">
+
+* You start by filling the parameter vector with random values (random initialization)
+    * and then you improve it gradually, taking one baby step at a time
+    * each step attempting to decrease the cost function, until the algorithm converges to a minimum.
+
+## The size of the steps
+
+* It's an important parameter in Gradient Descent.
+* And it's determined by the learning rate hyperparameter.
+    * Too small: then the algorithm will have to go through mny iterations to converge, 
+        * and consequently will take a long time.
+    * Too high: then you might jump across the valley and end up on the other side, possibly even higher than you were before.
+        * This could make the algorithm to diverge and failing to find a good solution.
+
+<img src="https://cdn-images-1.medium.com/max/1000/1*n79s9gvd0E8ALe9dLUEKAw.png" align="center" width="500" heigth="300">
