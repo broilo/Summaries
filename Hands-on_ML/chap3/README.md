@@ -170,4 +170,4 @@ F1-score = 1/(2(precision + recall)) = ... = TP/(TP+(FN+FP)/2)
 
 # Keywords
 
-**Precision/Recall tradeoff:** Increasing precision reduces recall and vice versa.
+* **Precision/Recall tradeoff:** Increasing precision reduces recall and vice versa.
