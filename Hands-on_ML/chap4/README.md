@@ -88,6 +88,20 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - It uses the whole batch of training data at every step.
         * As a result, it's terribly slow on very large training sets.
 
-        
+* To find a good learning rate:
+    - You can use grid search
+        * limit the number of iterations so that the grid search can eliminate models that take too long to converge.
+
+### How to set the the number of iteration?
+
+* If it's too low, you'll still be far away from the optimal solution when the algorithm stops.
+* If it's too high, you'll waste time while the model parameters don't cahnge anymore.
+
+### A simple solution
+
+* To set a very large number of iterations
+    - but to interrupts the algorithm when the gradient vector becomes tiny.
+    - That is, when its norm becomes smaller than a tiny number called the tolerance.
+        * This happens when the Gradient Descent has almost reached the minimum.
 
 # Keywords
