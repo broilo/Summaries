@@ -78,3 +78,16 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
         * The more parameters a model has, the more dimensions this space has, and harder the search is.
 
 ## Batch Gradient Descent
+
+> To implement Gradient Descent, you need to compute the gradient of the cost function with regards to each model parameter.
+
+* You need to calculate how much the cost function will change if you change the model parameter just a little bit.
+    - This is called partial derivative.
+* Notice that the Gradient vector of the cost function involves calculations over the full training set, at each Gradient Descent step.
+    - This is why the algorithm is called Batch Gradient Descent
+    - It uses the whole batch of training data at every step.
+        * As a result, it's terribly slow on very large training sets.
+
+        
+
+# Keywords
