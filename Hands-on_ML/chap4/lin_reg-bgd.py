@@ -8,8 +8,10 @@ y = 4+3*X+np.random.randn(100, 1)
 
 X_b = np.c_[np.ones((100, 1)), X]
 
-theta_path_bgd = []
+X_new = np.array(([0], [2]))
+X_new_b = np.c_[np.ones((2, 1)), X_new]
 
+theta_path_bgd = []
 
 def plot_greadient_descent(theta, eta, theta_path=None):
     m = len(X_b)
@@ -30,9 +32,6 @@ def plot_greadient_descent(theta, eta, theta_path=None):
 
 
 theta = np.random.randn(2, 1)  # random initialization
-
-X_new = np.array(([0], [2]))
-X_new_b = np.c_[np.ones((2, 1)), X_new]
 
 plt.figure(figsize=(10, 4))
 plt.subplot(131)
