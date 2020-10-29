@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 np.random.seed(42)
 
@@ -24,11 +23,3 @@ X_new = np.array(([0], [2]))
 X_new_b = np.c_[np.ones((2, 1)), X_new]
 
 X_new_b.dot(theta)
-
-theta_path_bgd = []
-
-def plot
-
-plt.plot(X, y, "b.")
-plt.axis([0, 2, 0, 15])
-plt.show()
