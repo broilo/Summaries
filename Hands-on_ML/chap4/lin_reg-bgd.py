@@ -13,7 +13,7 @@ X_new_b = np.c_[np.ones((2, 1)), X_new]
 
 theta_path_bgd = []
 
-def plot_greadient_descent(theta, eta, theta_path=None):
+def plot_gradient_descent(theta, eta, theta_path=None):
     m = len(X_b)
     plt.plot(X, y, "b.")
     n_iterations = 1000
@@ -35,10 +35,10 @@ theta = np.random.randn(2, 1)  # random initialization
 
 plt.figure(figsize=(10, 4))
 plt.subplot(131)
-plot_greadient_descent(theta, eta=0.02)
+plot_gradient_descent(theta, eta=0.02)
 plt.ylabel("$y$", rotation=0, fontsize=18)
 plt.subplot(132)
-plot_greadient_descent(theta, eta=0.1, theta_path=theta_path_bgd)
+plot_gradient_descent(theta, eta=0.1, theta_path=theta_path_bgd)
 plt.subplot(133)
-plot_greadient_descent(theta, eta=0.5)
+plot_gradient_descent(theta, eta=0.5)
 plt.show()
