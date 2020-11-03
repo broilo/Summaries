@@ -13,7 +13,7 @@ X_new_b = np.c_[np.ones((2, 1)), X_new]
 
 n_epochs = 50
 t0, t1 = 5, 50  # learning schedule hyperparameter
-m = 100
+m = len(X_b)
 
 
 def learning_schedule(t):
@@ -31,8 +31,8 @@ for epoch in range(n_epochs):
             style = "b-" if i > 0 else "r--"
             plt.plot(X_new, y_predict, style)
         random_index = np.random.randint(m)
-        xi = X_b[random_index:random_index + 1]
-        yi = y[random_index:random_index + 1]
+        xi = X_b[random_index:random_index+1]
+        yi = y[random_index:random_index+1]
         gradients = 2 * xi.T.dot(xi.dot(theta)-yi)
         eta = learning_schedule(epoch * m + i)
         theta = theta - eta * gradients
@@ -43,3 +43,5 @@ plt.xlabel("$x_1$", fontsize=18)
 plt.ylabel("$y$", rotation=0, fontsize=18)
 plt.axis([0, 2, 0, 15])
 plt.show()
+
+theta
