@@ -1,3 +1,10 @@
+"""
+There's an error in this code, because the figure
+plotted at the end is different from the one shown
+in the book (Fig. 4-10). Moreover, the result is
+different from that obtained using the Batch Gradient
+Descent algorithm.
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 
