@@ -3,6 +3,7 @@
 > More generally, a linear model makes a prediction by simply computing wieghted sum of the input features, plus a constant called the *bias term* (also called the *intercept term*).
 
 ``` 
+
 yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 ```
 
@@ -104,6 +105,40 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - That is, when its norm becomes smaller than a tiny number called the tolerance.
         * This happens when the Gradient Descent has almost reached the minimum.
 
+> **The manin problem:** is the fact that it uses the whole training set to compute the gradients at every step, which makes it very slow when the training set is large.
+
+## Stochastic Gradient Descent
+
+> It just picks a random instance in the training set at every step and computes the gradients based only on that single instance.
+
+* This makes the algorithm much faster since it has very little data to manipulate at every iteration.
+* It also makes it possible to train on huge training sets, since only one instance needs to be in memory at each iteration.
+    - SGD can be implemented as an out-of-core algorithm
+
+* Due to its stochastic (random) nature, this algorithm is much less regular than BGD.
+    - instead of gently decreasing until it reaches the minimum, the cost function will bounce up and down, decreasing only on average.
+* Over time it'll end up very close to the minimum, 
+    - but once it gets there it'll continue to bounce around.
+* When tha algorithm stops, the final parameter values are good, but not optimal.
+
+* When the cost function is very irregular:
+    - this can actually help the algorithm to jump out of a local minima
+* SGD has a better chance of finding the global minimum than BGD does.
+
+### Randomness
+* Is good: to escape from local optima.
+* Is bad: because it means the algorithm can never settle at the minimum.
+
+> One solution: is to gradually reduce the learning rate.
+* Simulated annealing process, see Keywords.
+
+* If the learning rate is reduced:
+    * too quickly, you may get stuck in a local minimum, or even end up frozen halhway to the minimum,
+    * too slowly, you may jump arund the minimum for a long time and end up with a supoptimal solution if you halt training too early.
+
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
+* **Simulated annealing:** E.g., the steps start out large (which helps make quick progress and escape local minima), then get smaller and smaller, allowing the algorithm to settle at the global minimum.
+* **Learning schedule:** Is the function that determines the learning rate at each iteration.
