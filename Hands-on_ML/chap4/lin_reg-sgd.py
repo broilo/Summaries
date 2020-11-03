@@ -52,5 +52,5 @@ def plot_sgd(theta, theta_path=None):
 
 theta = np.random.randn(2, 1)  # random initialization
 
-plot_sgd(theta)
+plot_sgd(theta, theta_path=theta_path_sgd)
 plt.show()
