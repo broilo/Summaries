@@ -30,7 +30,7 @@ def plot_gradient_descent(theta, eta, theta_path=None):
     plt.axis([0, 2, 0, 15])
     plt.title(r"$\eta = {}$".format(eta), fontsize=16)
 
-
+np.random.seed(42)
 theta = np.random.randn(2, 1)  # random initialization
 
 plt.figure(figsize=(10, 4))
