@@ -35,7 +35,7 @@ def plot_mbgd(theta, theta_path=None):
         shuffled_indices = np.random.permutation(m)
         X_b_shuffled = X_b[shuffled_indices]
         y_shuffled = y[shuffled_indices]
-        for i in range(0, m, minibatch_size):
+        for i in range(m):
             if epoch == 0 and i < 20:
                     y_predict = X_new_b.dot(theta)
                     style = "b-" if i > 0 else "r--"
