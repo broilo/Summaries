@@ -136,6 +136,14 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     * too quickly, you may get stuck in a local minimum, or even end up frozen halhway to the minimum,
     * too slowly, you may jump arund the minimum for a long time and end up with a supoptimal solution if you halt training too early.
 
+## Mini-batch Gradient Descent
+
+> Computes the gradients on small random sets of instances called mini-batches.
+
+* The algorithm's progress in parameter space is less erratic than with SGD,
+    * especially with fairly large mini-batches.
+* It'll end up walking around a bit clores to the minimum than SGD.
+* However, it may be harder to escape from local minima.
 
 # Keywords
 
