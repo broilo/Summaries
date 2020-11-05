@@ -154,8 +154,39 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - This is called Polynomial Regression.
 
 * A way to tell if the model is too simple or too complex is to check if the model is underfitting or overfitting.
-    * Which means, if the model performs poorly on both training ans testing or if the model performs well on the training but generalizes poorly.
+    - Which means, if the model performs poorly on both training ans testing or if the model performs well on the training but generalizes poorly.
 * Another way is to look at the learning curves.
+
+* One way to improve an overfitting model is to feed it more training data until the validation error reaches the training error.
+
+# The Bias/Variance Tradeoff
+
+> The model's generalization error can be expressed as the sum of three very different errors.
+
+* Bias:
+    - This part of the generalization error is due to wrong assumptions. 
+    - A high-bias model is most likely to underfit the training data.
+
+* Variance:
+    - Is due to the model's excessive sensitivity to small variations in the training data.
+    - A model with many degrees of freedom, such as a high-degree polynomial model, is likely to have high variance, and thus to overfit the training data.
+
+* Irreducible error:
+    - Is due to the noisiness of the data itself.
+    - The only way to reduce this part of the error is to clean up the data:
+        1. fix data sources
+        1. remove outliers
+        1. ...
+
+### One one hand: 
+
+* Increasing a model's complexity will typically increase its variance and reduce its bias.
+
+### On the other hand:
+
+* Reducing a model's complexity increases its bias and reduces its variance.
+
+> This is why it's called a tradeoff.
 
 # Keywords
 
@@ -163,3 +194,5 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * **Simulated annealing:** E.g., the steps start out large (which helps make quick progress and escape local minima), then get smaller and smaller, allowing the algorithm to settle at the global minimum.
 * **Learning schedule:** Is the function that determines the learning rate at each iteration.
 * **Learning curver:** These are plots of the model's performance on the training set and the validation set as a function of the training set size.
+* **Bias:** It's a "measure" of how simple or restricted is the model.
+* **Variance:** It's a "measure" of the variability of the model.
