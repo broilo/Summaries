@@ -153,8 +153,13 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - A simple way to do this is to add powers of each feature as new features, than train a linear model on this extended set of features.
     - This is called Polynomial Regression.
 
+* A way to tell if the model is too simple or too complex is to check if the model is underfitting or overfitting.
+    * Which means, if the model performs poorly on both training ans testing or if the model performs well on the training but generalizes poorly.
+* Another way is to look at the learning curves.
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
 * **Simulated annealing:** E.g., the steps start out large (which helps make quick progress and escape local minima), then get smaller and smaller, allowing the algorithm to settle at the global minimum.
 * **Learning schedule:** Is the function that determines the learning rate at each iteration.
+* **Learning curver:** These are plots of the model's performance on the training set and the validation set as a function of the training set size.
