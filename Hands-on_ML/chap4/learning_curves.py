@@ -28,6 +28,7 @@ def plot_learning_curves(model, X, y):
     plt.xlabel("Training set size", fontsize=14)
     plt.ylabel("RMSE", fontsize=14)
 
+
 lin_cl = LinearRegression()
 plot_learning_curves(lin_cl, X, y)
 plt.axis([0, 80, 0, 3])
