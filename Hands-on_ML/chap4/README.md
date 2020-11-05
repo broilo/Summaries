@@ -126,28 +126,32 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * SGD has a better chance of finding the global minimum than BGD does.
 
 ### Randomness
+
 * Is good: to escape from local optima.
 * Is bad: because it means the algorithm can never settle at the minimum.
 
 > One solution: is to gradually reduce the learning rate.
+
 * Simulated annealing process, see Keywords.
 
 * If the learning rate is reduced:
-    * too quickly, you may get stuck in a local minimum, or even end up frozen halhway to the minimum,
-    * too slowly, you may jump arund the minimum for a long time and end up with a supoptimal solution if you halt training too early.
+    - too quickly, you may get stuck in a local minimum, or even end up frozen halhway to the minimum,
+    - too slowly, you may jump arund the minimum for a long time and end up with a supoptimal solution if you halt training too early.
 
 ## Mini-batch Gradient Descent
 
 > Computes the gradients on small random sets of instances called mini-batches.
 
-* The algorithm's progress in parameter space is less erratic than with SGD,
-    * especially with fairly large mini-batches.
+* The algorithm's progress in parameter space is less erratic than with SGD, 
+    - especially with fairly large mini-batches.
 * It'll end up walking around a bit clores to the minimum than SGD.
 * However, it may be harder to escape from local minima.
 
 # Polynomial Regression
 
-
+* You can fit actually use a linear model to fit nonlinear data.
+    - A simple way to do this is to add powers of each feature as new features, than train a linear model on this extended set of features.
+    - This is called Polynomial Regression.
 
 # Keywords
 
