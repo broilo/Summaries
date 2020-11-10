@@ -203,6 +203,10 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 > It's important to scale the data, most regularized models are sensitive to the scale of the input features.
 
+## Lasso Regression
+
+> Just like Ridge, it adds a regularization term to the cost function.
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
