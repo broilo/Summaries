@@ -188,6 +188,21 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 > This is why it's called a tradeoff.
 
+## Ridge Regression (a.k.a. Tikhonov regularization)
+
+> Is a regularized version of Linear Regression.
+
+* A regularization term is added to the cost function.
+    - This forces the learning algorithm to not just fit the data but also keep the model weigths as small as possible.
+* Notice that the regularization term should only be added to the ost function during training.
+    - Once the model is trained, you want to evaluate the model's performance using the unregularized performance measure.
+
+* The hyperparameter controls how much you want to regularize the model. 
+    - Is this hyperparameter is zero, then Ridge Regularization is just Linear Regression.
+    - If it's very lage, then all weights end up very close to zero and the result is a flat line going through the data's mean.
+
+> It's important to scale the data, most regularized models are sensitive to the scale of the input features.
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
