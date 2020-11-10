@@ -12,3 +12,9 @@ X_new = np.linspace(0, 3, 100).reshape(100, 1)
 ridge_reg = Ridge(alpha=1, solver="cholesky", random_state=42)
 ridge_reg.fit(X, y)
 ridge_reg.predict([[1.5]])
+
+ridge_reg = Ridge(alpha=1, solver="sag", random_state=42)
+ridge_reg.fit(X, y)
+ridge_reg.predict([[1.5]])
+
+
