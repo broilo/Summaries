@@ -210,6 +210,10 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * I tends to eliminate the weights of the least important features.
     * In other words, Lasso Regression performs feature selection and outputs a sparse model (i.e., with few nonzero feature weights).
 
+## Elastic Net
+
+> 
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
