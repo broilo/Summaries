@@ -218,7 +218,8 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
     - And the mix ratio can be controlled.
         * When it's equal to zero: Elastic Net is equivalent to Ridge Regression.
         * When it's equal to one: Elastic Net is equivalent to Lasso Regression.
-        
+
+
 
 # Keywords
 
