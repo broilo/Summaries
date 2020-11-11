@@ -208,11 +208,17 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 > Just like Ridge, it adds a regularization term to the cost function.
 
 * I tends to eliminate the weights of the least important features.
-    * In other words, Lasso Regression performs feature selection and outputs a sparse model (i.e., with few nonzero feature weights).
+    - In other words, Lasso Regression performs feature selection and outputs a sparse model (i.e., with few nonzero feature weights).
 
 ## Elastic Net
 
-> 
+> Is a middle ground between Ridge and Lasso Regression.
+
+* The regularization term is a simple mix of both Ridge and Lasso's regularization terms.
+    - And the mix ratio can be controlled.
+        * When it's equal to zero: Elastic Net is equivalent to Ridge Regression.
+        * When it's equal to one: Elastic Net is equivalent to Lasso Regression.
+        
 
 # Keywords
 
