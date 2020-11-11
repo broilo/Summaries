@@ -194,7 +194,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 * A regularization term is added to the cost function.
     - This forces the learning algorithm to not just fit the data but also keep the model weigths as small as possible.
-* Notice that the regularization term should only be added to the ost function during training.
+* Notice that the regularization term should only be added to the cost function during training.
     - Once the model is trained, you want to evaluate the model's performance using the unregularized performance measure.
 
 * The hyperparameter controls how much you want to regularize the model. 
@@ -219,7 +219,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
         * When it's equal to zero: Elastic Net is equivalent to Ridge Regression.
         * When it's equal to one: Elastic Net is equivalent to Lasso Regression.
 
-
+## When should be used Linear Regression, Ridge, Lasso or Elastic Net?
 
 # Keywords
 
