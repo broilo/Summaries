@@ -229,7 +229,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 ## Early Stopping
 
- > To stop the training as soon as the validation errors reaches a minimum.
+ > To stop the training as soon as the validation error reaches a minimum.
 
  <img src="https://siegel.work/blog/EarlyStopping/img/2_overfitting_.svg" align="center" width="500" heigth="300">
  
