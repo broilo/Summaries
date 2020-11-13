@@ -234,6 +234,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
  <img src="https://siegel.work/blog/EarlyStopping/img/2_overfitting_.svg" align="center" width="500" heigth="300">
  
  <img src="https://images.deepai.org/glossary-terms/early-stopping-machine-learning-5422207.jpg" align="center" width="500" heigth="300">
+ 
 
 # Logistic Regression (Logit Regression)
 
@@ -245,7 +246,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * Else:
     * the model predicts that the instance belongs to the negative class labeled "0".
 
-
+<img src="file:///home/broilo/Pictures/Screenshot%20from%202020-11-13%2016-59-48.png" align="center" width="500" heigth="300">
 
 
 # Keywords
