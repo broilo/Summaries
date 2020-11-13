@@ -235,6 +235,19 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
  
  <img src="https://images.deepai.org/glossary-terms/early-stopping-machine-learning-5422207.jpg" align="center" width="500" heigth="300">
 
+# Logistic Regression (Logit Regression)
+
+> Some regression algorithms can be used for classification as well.
+
+* It's commonly used to estimate probability that an instance belongs to a particulas class.
+* If the estimated probability is greater than 50% (threshold):
+    * the model predicts that the instance belongs to that class (positive class labeled "1")
+* Else:
+    * the model predicts that the instance belongs to the negative class labeled "0".
+
+
+
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
