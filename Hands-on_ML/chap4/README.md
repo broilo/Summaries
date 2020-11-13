@@ -224,11 +224,14 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 > It's almost always preferable to have at least a little bit of regularization, so generally you should avoid plain Linear Regression.
 
 * Ridge is a good default, 
-    * but if you suspect that only a few features are actually useful, you should prefer Lasso or Elastic Net
+    - but if you suspect that only a few features are actually useful, you should prefer Lasso or Elastic Net
         * since they tend to reduce the useless features' weights down to zero.
 
 ## Early Stopping
 
+ > To stop the training as soon as the validation errors reaches a minimum.
+
+ <img src="https://siegel.work/blog/EarlyStopping/img/2_overfitting_.svg" align="center" width="500" heigth="300">
 
 # Keywords
 
