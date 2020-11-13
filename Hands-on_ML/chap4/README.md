@@ -232,6 +232,8 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
  > To stop the training as soon as the validation errors reaches a minimum.
 
  <img src="https://siegel.work/blog/EarlyStopping/img/2_overfitting_.svg" align="center" width="500" heigth="300">
+ 
+ <img src="https://images.deepai.org/glossary-terms/early-stopping-machine-learning-5422207.jpg" align="center" width="500" heigth="300">
 
 # Keywords
 
