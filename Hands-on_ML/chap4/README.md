@@ -221,6 +221,15 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 
 ## When should be used Linear Regression, Ridge, Lasso or Elastic Net?
 
+> It's almost always preferable to have at least a little bit of regularization, so generally you should avoid plain Linear Regression.
+
+* Ridge is a good default, 
+    * but if you suspect that only a few features are actually useful, you should prefer Lasso or Elastic Net
+        * since they tend to reduce the useless features' weights down to zero.
+
+## Early Stopping
+
+
 # Keywords
 
 * **Convergence rate:** When the cost function is convex and its slope doesn't change abruptly, it can be shown that the Batch Gradient Descent with a fixed learning rate has a convergence rate of O(1/iterations). In other words, if you divide the tolerance by 10 (to have a more precise solution), then the algorithm will have to run 10 times more iterations.
