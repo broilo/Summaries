@@ -246,7 +246,7 @@ yh = a0 + a1*x1 + a2*x2 + ... + an*xn
 * Else:
     * the model predicts that the instance belongs to the negative class labeled "0".
 
-<img src="./20201113_Logit-Reg.png" align="center" width="500" heigth="300">
+<img src="./20201113_Logit-Reg.png" align="center" width="600" heigth="400">
 
 
 # Keywords
