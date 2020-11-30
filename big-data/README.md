@@ -907,7 +907,7 @@ $ $SPARK_HOME/bin/pyspark
             ETL: Ferramentas que vão ler os dados, eventualmente vão fazer alguma agregação ou sumarização, e que vão jogar estes dados em algum banco de dados relacional. São jobs que lêem os dados, fazem alguma análise e disponibilizam em alguma ferramente que podem fazer uma consulta SQL, Tableau...
             * Machine Learning: Extrair algum tipo de inteligência dos dados. Processar os dados de forma que tenham alguma informação útil para o meu negócio.
                 * Resultado do processo de ML atualiza um Cache, e este Cashe fica disponível para as aplicações online.
-## Refências
+## Referências
 
 1. [Curso de Big Data](https://www.youtube.com/watch?v=1SNoNTaWFIo)
 1. [Pyspark.sql Documentation](https://spark.apache.org/docs/latest/api/python/pyspark.sql.html)
