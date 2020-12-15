@@ -75,3 +75,4 @@
 1. Extreme programming explained (Kent Beck)
 1. The Pragmatic Programming: from journeyman to master (Andrew Hunt e David Thomas)
 1. Adaptive Software Development: a collaborative approach to managing complex systems (Jim Highsmith e Sam Bayer)
+1. [Agile Manifesto](https://agilemanifesto.org/)
