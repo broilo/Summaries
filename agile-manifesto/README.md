@@ -9,8 +9,8 @@
 
 ## Scrum
 
-* (The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka))[https://hbr.org/1986/01/the-new-new-product-development-game]: Introduziram o termo Scrum no contexto do desenvolvimento de produtos.
-* (The knowledge creating company (Ikujiro Nonaka))[https://hbr.org/2007/07/the-knowledge-creating-company]: Scrum é uma forma de "criação de conhecimento organizacional[...] particularmente útil na geração de inovação contínua, incremental e espiural."
+* [The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka)](https://hbr.org/1986/01/the-new-new-product-development-game): Introduziram o termo Scrum no contexto do desenvolvimento de produtos.
+* [The knowledge creating company (Ikujiro Nonaka)](https://hbr.org/2007/07/the-knowledge-creating-company): Scrum é uma forma de "criação de conhecimento organizacional[...] particularmente útil na geração de inovação contínua, incremental e espiural."
 
 * **Scrum:** inspirado no movimento scrum do Rugby. 
     - Um processo completo é mais bem executado quando um time multidisciplinar atravessa suas múltiplas fases, avançando como um bloco único passando o trabalho adiante e de volta, quando necessário, assim como os jogadores de Rugby fazem com a bola.
@@ -25,6 +25,6 @@
 
 ## Referências
 
-1. (The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka))[https://hbr.org/1986/01/the-new-new-product-development-game]
-1. (The knowledge creating company (Ikujiro Nonaka))[https://hbr.org/2007/07/the-knowledge-creating-company]
+1. [The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka)](https://hbr.org/1986/01/the-new-new-product-development-game)
+1. [The knowledge creating company (Ikujiro Nonaka)](https://hbr.org/2007/07/the-knowledge-creating-company)
  
