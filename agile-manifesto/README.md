@@ -76,8 +76,13 @@
 
         - aquelas que entregam mais valor percebido para o cliente, da maneira mais eficiente possível
         - tanto em matéria de custos e prazos quanto de dinâmica de execução.
-```
-"Estamos descobrindo maneiras melhores de desenvolver software, fazendo-os nós mesmos e e ajudando outros a fazerem o mesmo. Através deste trabalho, passamos a valorizar:
+
+``` 
+**Os 4 pilares**
+
+"Estamos descobrindo maneiras melhores de desenvolver software, fazendo-os nós mesmos e e ajudando outros a fazerem o mesmo. 
+Através deste trabalho, passamos a valorizar:
+
 1. indivíduos e interações > processos e ferramentas
 2. software em funcionamento > documentação abrangente
 3. colaboração com o cliente > negociaçãode contratos
@@ -85,6 +90,55 @@
 
 Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda".
 ```
+
+* Ou seja: trata-se de avaliar de maneira crítica quais os limites desses elementos, equilibrando a sua necessidade mínima com pontos estes sim cruciais: 
+    - as interações entre pessoas
+    - a entrega de produtos e serviços com qualidade e valor percebido
+    - interação freqüente com o cliente durante a execução
+    - a capacidade de se adaptar a mudanças em prol da melhor entrega, aos olhos de quem a recebe.
+
+**Os 12 princípios**
+
+* Podem derivar *rituais*, *práticas* e *artefatos* que auxiliem a compreensão e a fixação da dinâmica.
+
+1. ***Nossa maior prioridade é satisfazer o cliente através da entrega contínua e adiantada de software com valor agregado***
+
+    * Equipes ágeis são *cliente-centristas*
+
+2. ***Mudanças nos requisitos são bem-vindas, mesmo tardiamente no desenvolvimento. Processos ágeis tiram vantagem das mudanças visando vantagem competitiva para o cliente***
+
+    * Equipes ágeis toleram quaisquer ajustes aos planos de trabalho em prol da melhor entrega possível, dentro das capacidades e recursos disponíveis para sua execução.
+    * Porém, sempre que as alterações no plano forem grandes o suficiente para descaractireizar demais o planejamento inicial, os ajustes são substituidos por um novo planejamento.
+
+3. ***Entregar freqüentemente software funcionando, de poucas semanas a poucos meses, com preferência à menor escala de tempo***
+
+    * Equipes ágeis constroem produtos e serviços de qualquer tamanho e complexidade, porém não submetem os clientes a longas esperas até que finalmente tenham algo utilizável em suas mãos. 
+    * Todo o trabalho é planejado de maneira que de tempos em tempos, haja entregas parciais úteis que quando conectadas, resultam na solução completa.
+
+4. ***Pessoas de negócio e desenvolvedores devem trabalhar diariamente em conjunto por todo o projeto***
+
+    * Grande parte do fracasso dos projetos decorrem dos mal-entendidos.
+    * Equipes ágeis optam por modelos de comunicação extremamente eficientes com as áreas de negócio que são atendidas por elas, incorporando profissionais destas áreas de negócio ao time a fim de garantir alinhamento de expectativas e percepção de valor das entregas durante todo o processo de contrução dos produtos ou serviços, reduzindo o risco de insatisfação que é bastante coum em fases finais de teste e validação de soluções contruídas em ambientes onde as equipes e os clientes permanecem distantes por muito tempo.
+
+5. ***Construa projetos em torno de indivíduos motivados. Dê a eles o ambiente e o suporte necessário e confie neles para fazer o trabalho***
+
+    * Clareza de objetivo e valor para o cliente
+        - construir o ambiente mais fluido possível, confiando que aquele grupo de pessoas é a melhor equipe para fazer o que precisa ser feito.
+
+6. ***O método mais eficiente e eficaz de transmitir informações para, e entre, uma equipe de desenvolvimento é através de consersa face a face***
+
+    * A maior parte dos fracassos na execução do trabalho estão relacionados a problemas de comunicação.
+    * Equipes ágeis comunicam-se face a face sempre que ossível, e quando não, emulam a maneira mais próxima possível de um contato presencial, afim de garantir o entendimento claro das mensagens.
+
+7. ***Software funcionando é a medida primaria do progresso***
+
+    * Nada é mais importante do que entregas parciais e finais, de produtos e serviços funcionais.
+    * Nada substitui o processo de uma entrega funcional quando o assunto é avaliar o progresso qualitativo de uma equipe ágil.
+
+8. ***Os processos ágeis promovem desenvolvimento sustentável. Os pratocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante individualmente***
+
+    * 
+
 ## Referências
 
 1. [The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka)](https://hbr.org/1986/01/the-new-new-product-development-game)
