@@ -66,8 +66,25 @@
 * Adaptive Software Development: a collaborative approach to managing complex systems (Jim Highsmith e Sam Bayer): substituir a abordagem tradicional chamada de cascata, por uma série de ciclos curtos e repetitivos de especulação, colaboração e aprendizagem.
 * Essa dinâmica gera aprendizagem contínua e facilidade na adaptação dos planos, já que uma das premissas da ASD é que no começo dos projetos o nível de incerteza é mais alto, porém não deveríamos nem esperar a perfeição, nem passar muito tempo parados, ao contrário, inicia o trabalho com o que temos e tolerar correções ao planejamento dinamiza o trabalho e aproxima a entrega do seu valor percebido esperado.
 
+## Manifesto Ágil: História e pilares
 
+* 2001: "Agile Alliance" e "Manifesto para o desenvolvimento ágil de software".
 
+    - Como propor, de maneira coordenada, uma abordagem para gestão de projetos mais leve, menos orientada aos processos e menos carregada de documentação.
+    - Uma forma de aplicar o trabalho, possível de ser aplicada muito além de apenas programação de computadores.
+    - Manifesto ágil: 4 pilares e 12 princípios que passaraiam a nortear o trabalho das equipes exponenciais
+
+        - aquelas que entregam mais valor percebido para o cliente, da maneira mais eficiente possível
+        - tanto em matéria de custos e prazos quanto de dinâmica de execução.
+```
+"Estamos descobrindo maneiras melhores de desenvolver software, fazendo-os nós mesmos e e ajudando outros a fazerem o mesmo. Através deste trabalho, passamos a valorizar:
+1. indivíduos e interações > processos e ferramentas
+2. software em funcionamento > documentação abrangente
+3. colaboração com o cliente > negociaçãode contratos
+4. responder a mudanças > seguir um plano
+
+Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda".
+```
 ## Referências
 
 1. [The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka)](https://hbr.org/1986/01/the-new-new-product-development-game)
