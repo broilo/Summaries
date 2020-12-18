@@ -1,3 +1,4 @@
+
 # Manifesto Ágil
 
 # Módulo 1
@@ -135,9 +136,34 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
     * Nada é mais importante do que entregas parciais e finais, de produtos e serviços funcionais.
     * Nada substitui o processo de uma entrega funcional quando o assunto é avaliar o progresso qualitativo de uma equipe ágil.
 
-8. ***Os processos ágeis promovem desenvolvimento sustentável. Os pratocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante individualmente***
+8. ***Os processos ágeis promovem desenvolvimento sustentável. Os pratocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante indefinidamente***
 
-    * 
+    * As equipes procuram tornar a si mesmas, e as organizações de que fazem pare, em esteiras freqüentes de agilidade.
+    * O ritmo de trabalho, o modelo de governança, e as práticas adotadas pelo time permanecem alinhadas aos novos comportamentos propostos no manifesto.
+
+9. ***Contínua atenção à excelência técnica e bom design aumenta a agildiade***
+
+    * As entregas parciais servem como medidores e garantidores da qualidade da entrega final.
+    * Cada feedback recebido a cada entrega parcial não somente a corrige, como também aperfeiçoa a próxima entrega parcial, gerando um ciclo de melhoria contínua.
+
+10. ***Simnplicidade, a arte de maximizar a quantidade de trabalho não realizado, é essencial***
+
+    * As equipes ágeis estão sempre orientadas à máxima entrega de valor percebido para o cliente, no tempo mais curto, e preferencialmente com entregas parciais que já tenham utilidade em si, e que quando conectadas resultem na solução para o problema de negócio ou para a oportunidade de mercado em questão.
+        - é fundamental garantir que apenas o trabalho necessário para este fim esteja sendo feito.
+    * As perguntas chaves utilizadas por equipes ágeis para promover a simplificação do trabalho são:
+        - Executar?
+        - Delegar?
+        - Adiar?
+        - Ou excluir?
+
+11. ***As melhores arquiteturas, requisitos e designs emergem de equipes auto-organizáveis***
+
+    * Um dos valores mais importantes presente nas equipes ágeis é a *confiança*.
+    * Equipes ágeis são autodirigidas.
+
+12. ***Em intervalos regulares, a equipe reflete sobre como se tornar mais eficaz e então refina e ajusta ser comportamento de acordo***
+
+    * Iteração é uma forma de organização do trabalho composta por ciclos curtos de planejamento, execução e reflexão, que levam à entrgas parciais de valor percebido além de gerar aprendizagem capitalizável.
 
 ## Referências
 
@@ -147,3 +173,5 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
 1. The Pragmatic Programming: from journeyman to master (Andrew Hunt e David Thomas)
 1. Adaptive Software Development: a collaborative approach to managing complex systems (Jim Highsmith e Sam Bayer)
 1. [Agile Manifesto](https://agilemanifesto.org/)
+
+
