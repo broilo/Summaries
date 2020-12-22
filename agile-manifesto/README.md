@@ -78,9 +78,9 @@
         - aquelas que entregam mais valor percebido para o cliente, da maneira mais eficiente possível
         - tanto em matéria de custos e prazos quanto de dinâmica de execução.
 
-``` 
 **Os 4 pilares**
 
+``` 
 "Estamos descobrindo maneiras melhores de desenvolver software, fazendo-os nós mesmos e e ajudando outros a fazerem o mesmo. 
 Através deste trabalho, passamos a valorizar:
 
