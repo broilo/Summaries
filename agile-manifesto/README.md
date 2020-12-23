@@ -165,6 +165,39 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
 
     * Iteração é uma forma de organização do trabalho composta por ciclos curtos de planejamento, execução e reflexão, que levam à entrgas parciais de valor percebido além de gerar aprendizagem capitalizável.
 
+# Módulo 2
+
+## Valores de equipes ágeis
+## Dinâmica dos valores no trabalho
+
+1. Confiar:
+    * Def: sentimento de quem acredita na sinceridade de algo ou de alguém.
+    * Equipes ágeis desburocratizam e simplificam suas rotinas por causa dessa virtude.
+        - Ser capaz de documentar apenas o mínimo necessário quando interagem.
+
+2. Respeitar:
+    * Etimologia: olhar outra vez.
+    * Capacidade de ser altruísta, de maneira consciente e planejada. 
+
+3. Abertura:
+    * É a disposição em receber.
+    * Cultura de *feedback*
+        - Reforçar positivamente aquilo que deve continuar sendo feito
+        - Corrigir rapidamente aquilo que impacta negativamente uma determinada circunstância
+    * Para uma equipe ágil de alto desempenho, um feedback não é nem positivo nem negativo. Para eles, feedback é um presente.
+    * Feedback não é opinião!
+
+4. Coragem:
+    * Def: sinônimo de perseverança.
+    * Estímulo para que os indivíduos experimentem.
+    * Precisa de coragem para planejar o mínimo necessário para começar a trabalhar o mais rápido possível.
+
+
+
+
+
+ 
+
 ## Referências
 
 1. [The new new product development game (Hirotaka Takeuchi e Ikujiro Nonaka)](https://hbr.org/1986/01/the-new-new-product-development-game)
