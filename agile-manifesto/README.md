@@ -179,7 +179,7 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
     * Etimologia: olhar outra vez.
     * Capacidade de ser altruísta, de maneira consciente e planejada. 
 
-3. Abertura:
+3. Aceitar/Abertura:
     * É a disposição em receber.
     * Cultura de *feedback*
         - Reforçar positivamente aquilo que deve continuar sendo feito
@@ -187,7 +187,7 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
     * Para uma equipe ágil de alto desempenho, um feedback não é nem positivo nem negativo. Para eles, feedback é um presente.
     * Feedback não é opinião!
 
-4. Coragem:
+4. Ousar/ Coragem:
     * Def: sinônimo de perseverança.
     * Estímulo para que os indivíduos experimentem.
     * Precisa de coragem para planejar o mínimo necessário para começar a trabalhar o mais rápido possível.
