@@ -187,7 +187,7 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
     * Para uma equipe ágil de alto desempenho, um feedback não é nem positivo nem negativo. Para eles, feedback é um presente.
     * Feedback não é opinião!
 
-4. Ousar/ Coragem:
+4. Ousar/Coragem:
     * Def: sinônimo de perseverança.
     * Estímulo para que os indivíduos experimentem.
     * Precisa de coragem para planejar o mínimo necessário para começar a trabalhar o mais rápido possível.
