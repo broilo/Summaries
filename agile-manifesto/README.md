@@ -192,11 +192,46 @@ Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à 
     * Estímulo para que os indivíduos experimentem.
     * Precisa de coragem para planejar o mínimo necessário para começar a trabalhar o mais rápido possível.
 
+# Módulo 3
 
+# Princípios das equipes ágeis
 
+* Não é só o conjunto certo de valores que garante a adoção correta dessa nova forma de trabalhar.
+* Existem também princípios fundamentais
+    - antes mesmo do primeiro contato com metodologias ágeis
+    - que facilitam muito a aprendizagem acerca dos artefatos e rituais sugeridos por elas
+    
+1. Princípios
+    * Def (mais adequada no contexto da agilidade nos negócios): é um conjunto de normas ou padrões de condutas a serem seguidos por uma pessoa ou instituição.
+        - i.e., toda vez que alguém escolhe agir ou deixar de agir, está de baixo das influências dos seus princípios, seja consciente ou inconscientemente.
 
+    * Quando combinados aos valores, os princípios tem papel de aceleração, de criação de contexto.
 
+2. Princípios chaves:
+    * Garantir clareza de objetivo
+    * Preferir iteração sobre perfeição
+    * Formar equipes pequenas, multidisciplinares e auto dirigidas
+
+# Detalhamento dos princípios na dinâmica do trabalho
+
+1. Clareza de objetivo
+    * Propósito do trabalho
+    * Se orienta ao valor daquela entrega
+    * Ajuda no ato chamado de "divergir para solucionar"
+
+2. Iteração sobre perfeição
+    * Ser capaz de tangibilizar as idéias propostas, a fim de:
+        - validar as que foram priorizadas
+        - aprender no percurso
+        - identificar como os clientes atuais e potenciais reagem a elas.
  
+ * Def: Iterar
+    - usar o resultado de uma parte anterior de uma equação para resolver a próxima, e repetir esse processo tantas vezes quanto for necessário.
+
+3. Equipes pequenas auto dirigidas
+    * Consciência de que quanto mais fluido for o trabalho, melhor tanto para o time quanto para o cliente da entrega.
+    * Visão de ponta a ponta.
+    * Auto dirigida: toda a equipe passa a ser responsável pelo ônus e bônus da dinâmica de execução do trabalho.
 
 ## Referências
 
