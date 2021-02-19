@@ -7,6 +7,8 @@ One of the major problems when dealing with unbalanced datasets relates to the m
 * [Normalized Gini Coefficient](https://theblog.github.io/post/gini-coefficient-intuitive-explanation/#:~:text=The%20Normalized%20Gini%20coefficient%20is,could%20give%20you%20a%20better): 
     - is a more robust metric for imbalanced datasets, that ranges from approximately 0 for random guessing, to approximately 0.5 for a perfect score.
 
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.x-mol.com%2Fpaper%2F5981156%3FrecommendPaper%3D604917&psig=AOvVaw292tPFeQ1w1oPN3D9WzGDw&ust=1613824874180000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjC1qb89e4CFQAAAAAdAAAAABAD" align="center" width="400" heigth="200">
+
 ## Confusion Matrix
 
 # References
