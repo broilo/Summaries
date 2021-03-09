@@ -10,7 +10,9 @@ Nevertheless, there are some extreme cases in which the class ratio is just wron
 
 One of the major problems when dealing with imbalanced datasets relates to the metrics used to evaluated the model. Simple metrics, *e.g.* accuracy score may be quite misleading. In a dataset with highly imbalanced classes, if the classifier always "predicts" the most common class without performing any analysis of the features, it will still result in a high accuracy rate, which is obviously illusory.
 
-In this cases, the high accuracy rate is just an illusion. Therefore, the choice of the metric used in imbalanced datasets is extremely important. As an example, a more robust evaluation metric for and imbalanced datasets would be the Normalized Gini Coefficient, that ranges from approximately 0 for a perfect score, to 1 for a random guessing [2]. 
+In this cases, the high accuracy rate is just an illusion. Therefore, the choice of the metric used in imbalanced datasets is extremely important. As an example, a more robust evaluation metric for and imbalanced datasets would be the:
+
+* **Normalized Gini Coefficient**, that ranges from approximately 0 for a perfect score, to 1 for a random guessing [2]. 
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIj3-f7pa4FgizyuITo9_vtMVPFpj6MA5rUg&usqp=CAU" align="center" width="300" heigth="200">
 
